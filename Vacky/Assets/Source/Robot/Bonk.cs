@@ -21,8 +21,7 @@ public class Bonk : MonoBehaviour
       
   }
 
-  void OnCollisionEnter(Collision collision)
+  void OnCollisionEnter2D(Collision2D collision)
   {
-    control.stun(0.4f);
   }
 }
