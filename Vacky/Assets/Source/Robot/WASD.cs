@@ -39,7 +39,7 @@ public class WASD : MonoBehaviour
   {
     StopAllCoroutines();
     _isStunned = true;
-    StartCoroutine("stopStun");
+    StartCoroutine("stopStun", seconds);
   }
 
   private IEnumerator stopStun(float seconds)
