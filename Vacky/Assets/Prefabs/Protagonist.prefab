@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6504719881398948250}
   - component: {fileID: 2780171554955269510}
   - component: {fileID: 5809203958186350547}
+  - component: {fileID: 3875295481706441534}
   m_Layer: 0
   m_Name: Protagonist
   m_TagString: Untagged
@@ -45,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f27ce022af54a342aa2c87ee3fb45ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
+  Speed: 10
+  RotationSpeed: 110
 --- !u!50 &5809203958186350547
 Rigidbody2D:
   serializedVersion: 4
@@ -67,6 +69,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &3875295481706441534
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504719881398948248}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.23
 --- !u!1 &7445219785190525881
 GameObject:
   m_ObjectHideFlags: 0
