@@ -123,6 +123,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1439524644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6504719881398948248, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
+  m_PrefabInstance: {fileID: 6504719881977774664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1439524649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439524644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ad9758e9a43b547a61e0426a090acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _viewRadius: 10
+  _viewAngle: 60
+  _obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _meshResolution: 10
 --- !u!4 &2035621529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6504719881398948250, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
@@ -138,6 +161,26 @@ PrefabInstance:
     - target: {fileID: 168306209228548204, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 168306209228548240, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
       propertyPath: m_RootOrder
@@ -310,6 +353,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1512621171300704168, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6504719881398948248, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
       propertyPath: m_Name
       value: Protagonist
