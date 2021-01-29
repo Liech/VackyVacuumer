@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2780171554955269510}
   - component: {fileID: 5809203958186350547}
   - component: {fileID: 3875295481706441534}
+  - component: {fileID: 1722538217383194200}
   m_Layer: 0
   m_Name: Protagonist
   m_TagString: Untagged
@@ -48,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 10
   RotationSpeed: 110
+  BackwardsDrive: 1
 --- !u!50 &5809203958186350547
 Rigidbody2D:
   serializedVersion: 4
@@ -85,6 +87,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.23
+--- !u!114 &1722538217383194200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504719881398948248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f188cd65a03505d469f5076b3a37b2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7445219785190525881
 GameObject:
   m_ObjectHideFlags: 0
