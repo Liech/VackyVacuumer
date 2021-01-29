@@ -139,6 +139,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.103773594
+      objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.10167963
+      objectReference: {fileID: 0}
+    - target: {fileID: 168306209228548207, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.10034711
+      objectReference: {fileID: 0}
     - target: {fileID: 168306209228548240, guid: 1965af3a7388ed542873ac7f1368f515, type: 3}
       propertyPath: m_RootOrder
       value: 0
