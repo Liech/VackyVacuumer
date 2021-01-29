@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Life : MonoBehaviour
 {
-  public uint life = 100;
-  public uint maxlife = 100;
+  public int life = 100;
+  public int maxlife = 100;
   public GameObject lifeBar;
 
   // Start is called before the first frame update
@@ -25,5 +25,12 @@ public class Life : MonoBehaviour
       LifeBar img = lifeBar.GetComponent<LifeBar>();
       img.setLife((float)life / (float)maxlife);
     }
+  }
+
+  public void addDamage(int dmg)
+  {
+    life -= dmg;
+    if (life < 0)
+      life = 0;
   }
 }
