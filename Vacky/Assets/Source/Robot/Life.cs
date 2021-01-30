@@ -41,6 +41,7 @@ public class Life : MonoBehaviour
         if (GetComponent<DangerousThing>())
           GetComponent<DangerousThing>().On = false;
         transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
+        Debug.Log("Death: " + gameObject.name);
       }
     }
   }
