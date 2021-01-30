@@ -12,6 +12,8 @@ public class VisRenderer : MonoBehaviour
 
     public float _meshResolution;
 
+    public float _maskDilation = 0.8f;
+
     void DrawFieldOfView()
     {
         int stepCount = Mathf.RoundToInt(_viewAngle * _meshResolution);
@@ -20,7 +22,7 @@ public class VisRenderer : MonoBehaviour
         for ( int i = 0; i <= stepCount; i++)
         {
             float ang = transform.localEulerAngles.z - _viewAngle / 2 + stepAng * i;
-            Debug.DrawLine(transform.position, transform.position + dirFromAngle(ang, true) * _viewRadius, Color.red);
+            //Debug.DrawLine(transform.position, transform.position + dirFromAngle(ang, true) * _viewRadius, Color.red);
             ViewCastData cast = viewCast(ang);
             viewPts.Add(cast._point);
         }
@@ -30,22 +32,27 @@ public class VisRenderer : MonoBehaviour
         int[] tris = new int[(vertCount - 2) * 3];
 
         verts[0] = Vector3.zero;
-        for(int i = 1; i<vertCount; i++)
+        for(int i = 0; i<vertCount-1; i++)
         {
-            verts[i] = viewPts[i];
-            if (i < vertCount - 1)
+            verts[i+1] = transform.InverseTransformPoint(viewPts[i])+Vector3.up*_maskDilation;
+            if (i < vertCount - 2)
             {
                 tris[i * 3] = 0;
-                tris[i * 3 + 1] = i;
-                tris[i * 3 + 2] = i + 1;
+                tris[i * 3 + 1] = i + 2;
+                tris[i * 3 + 2] = i+1;     
             }
         }
+
+        _viewMesh.Clear();
+        _viewMesh.vertices = verts;
+        _viewMesh.triangles = tris;
+        _viewMesh.RecalculateNormals();
     }
 
     ViewCastData viewCast(float globAng)
     {
         Vector3 dir = dirFromAngle(globAng, true);
-        RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position[0], transform.position[1]), dir, _viewRadius);
+        RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position[0], transform.position[1])+ new Vector2(dir[0],dir[1])*GetComponent<CircleCollider2D>().radius*1.01f, dir, _viewRadius);
         if (hit.collider != null)
             return new ViewCastData(true, hit.point, hit.distance, globAng);
 
@@ -69,7 +76,7 @@ public class VisRenderer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         DrawFieldOfView();   
     }
