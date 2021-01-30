@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 5307815081710073803}
   - component: {fileID: 5307815081710073812}
   - component: {fileID: 5307815081710073802}
+  - component: {fileID: 5274597815231111609}
   m_Layer: 0
   m_Name: Tilemap_Base
   m_TagString: Untagged
@@ -3444,6 +3445,18 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &5274597815231111609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5307815081710073814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae7cc4087cc17549b52647eda0104df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9063845627566322705
 GameObject:
   m_ObjectHideFlags: 0
@@ -3456,6 +3469,7 @@ GameObject:
   - component: {fileID: 7969452263558184610}
   - component: {fileID: 7390300797490678718}
   - component: {fileID: 6808853138410677977}
+  - component: {fileID: 5281749815321032930}
   m_Layer: 2
   m_Name: Tilemap_Dreck
   m_TagString: Dreck
@@ -3633,3 +3647,15 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &5281749815321032930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063845627566322705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb19c74f8f020c24f9d8b3f632017a08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
