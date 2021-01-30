@@ -77,7 +77,6 @@ public class VisRenderer : MonoBehaviour
 
   public void upgrade()
   {
-    Debug.Log("UPGRADE VIEW");
     if (_visMode == VisMode.Bonk)
       _visMode = VisMode.Lida;
     else if (_visMode == VisMode.Lida)
