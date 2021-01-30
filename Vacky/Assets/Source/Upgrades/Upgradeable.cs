@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Upgradeable : MonoBehaviour
+public class Upgradeable : IController
 {
   private List<Upgrader> upgrader;
   private Upgrader currentUpgrader;
