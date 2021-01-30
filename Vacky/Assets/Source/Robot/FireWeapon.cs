@@ -16,7 +16,7 @@ public class FireWeapon : MonoBehaviour
   void FixedUpdate()
   {
     bool pressed = Input.GetKey(KeyCode.Space);
-    //int dirt_count = GetComponent<Dreck>().GetDirtCount();
+    
     if (pressed && !fired &&  GetComponent<Ammo>().getAmmo() > 0 && GetComponentInChildren<IFireable>())
     {
       GetComponentInChildren<IFireable>().fire();

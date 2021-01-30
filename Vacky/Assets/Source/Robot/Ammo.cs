@@ -11,14 +11,13 @@ public class Ammo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        AmmoBar.GetComponent<AmmoBar>().setAmmo((float)ammo / (float)max_ammo);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (AmmoBar)
-        //    AmmoBar.GetComponent<AmmoBar>().setAmmo(ammo);
+
     }
 
     public void setAmmo(int new_ammo)

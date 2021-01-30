@@ -28,8 +28,7 @@ public class Dreck : MonoBehaviour
         if (collision.tag == "Dreck")
         {
             dirt_count += 1;
-            Debug.Log("Dreck Count: " + dirt_count);
-            //GetComponent<Ammo>().setAmmo(GetComponent<Ammo>().getAmmo() + 1);   // increase Ammo by 1
+            //Debug.Log("Dreck Count: " + dirt_count);
             GetComponent<Ammo>().incAmmo();
 
             float radius = GetComponent<CircleCollider2D>().radius;
