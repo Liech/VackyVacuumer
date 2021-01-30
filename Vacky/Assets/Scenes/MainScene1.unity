@@ -15211,6 +15211,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8166870336925862526, guid: 03ba6a974135f99408d35e3a69b868f0, type: 3}
+      propertyPath: _visMode
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7850372681639465685, guid: 03ba6a974135f99408d35e3a69b868f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 03ba6a974135f99408d35e3a69b868f0, type: 3}

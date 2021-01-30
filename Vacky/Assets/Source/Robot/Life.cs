@@ -9,6 +9,7 @@ public class Life : MonoBehaviour
   public int maxlife = 100;
   public bool lifebar = false;
   private bool alive = true;
+  public int team;
 
   // Start is called before the first frame update
   void Start()
