@@ -5315,7 +5315,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 885902383191631120, guid: 3a9e2d360ea63fe409d5117ab5c8d86b, type: 3}
       propertyPath: MoveSpeed
-      value: 1.3333334
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 885902383191631120, guid: 3a9e2d360ea63fe409d5117ab5c8d86b, type: 3}
       propertyPath: currentDirection.x
