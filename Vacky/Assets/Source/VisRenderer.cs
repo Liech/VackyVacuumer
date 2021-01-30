@@ -75,6 +75,17 @@ public class VisRenderer : MonoBehaviour
         _viewMesh.RecalculateNormals();
     }
 
+  public void upgrade()
+  {
+    Debug.Log("UPGRADE VIEW");
+    if (_visMode == VisMode.Bonk)
+      _visMode = VisMode.Lida;
+    else if (_visMode == VisMode.Lida)
+      _visMode = VisMode.Cam;
+    else if (_visMode == VisMode.Lida)
+      _visMode = VisMode.XRay;
+  }
+
     ViewCastData viewCast(float globAng, bool colide)
     {
         Vector3 dir = dirFromAngle(globAng, true);
