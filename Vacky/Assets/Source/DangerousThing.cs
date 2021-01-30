@@ -13,7 +13,7 @@ public class DangerousThing : MonoBehaviour
       return;
     if (collision.gameObject.GetComponent<Life>())
     {
-      collision.gameObject.GetComponent<Life>().addDamage(Damage);
+      collision.collider.gameObject.GetComponent<Life>().addDamage(Damage);
     }
     IStunnable stunnable;
     if (collision.gameObject.transform.TryGetComponent<IStunnable>(out stunnable))
