@@ -208,6 +208,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f188cd65a03505d469f5076b3a37b2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bonkMesh: {fileID: 5845204273846962250, guid: 7538c94c89d7e7449a3ecb4756285082, type: 3}
+  _bonkers: []
+  _bonkerCoords: []
+  _maxMemory: 5
+  _enabled: 0
 --- !u!114 &7226917779153083587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +283,14 @@ MonoBehaviour:
   _viewMesh: {fileID: 0}
   _meshResolution: 3
   _maskDilation: 0.52
+  _viewRadiusBonk: 1
+  _viewAngleBonk: 360
+  _viewRadiusLida: 12
+  _viewAngleLida: 120
+  _viewRadiusCam: 120
+  _viewAngleCam: 15
+  _viewRadiusXRay: 150
+  _viewAngleXRay: 360
   _visMode: 2
 --- !u!114 &3399087673369565626
 MonoBehaviour:
