@@ -435,6 +435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7093904375756567927, guid: f395dc700540c2a4ca0065acfe9ab942, type: 3}
+      propertyPath: MoveSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 9007153770258389058, guid: f395dc700540c2a4ca0065acfe9ab942, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -483,5 +487,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Labytinth
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8836499454889797657, guid: f395dc700540c2a4ca0065acfe9ab942, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f395dc700540c2a4ca0065acfe9ab942, type: 3}
