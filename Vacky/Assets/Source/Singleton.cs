@@ -13,6 +13,8 @@ public class Singleton : MonoBehaviour
   public LifeBar lifebar;
   public AmmoBar dreckbar;
   public GameObject protagonist;
+  public GameObject Dialog;
+  public bool blockInput = false;
 
   // Start is called before the first frame update
   public Singleton() 

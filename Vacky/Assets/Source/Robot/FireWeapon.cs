@@ -15,6 +15,9 @@ public class FireWeapon : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
+    if (Singleton.instance.blockInput)
+      return;
+
     bool pressed = Input.GetKey(KeyCode.Space);
     
     if (pressed && !fired &&  GetComponent<Ammo>().getAmmo() > 0 && GetComponentInChildren<IFireable>())
