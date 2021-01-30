@@ -129,6 +129,8 @@ MonoBehaviour:
   Damage: 15
   Stun: 4
   On: 1
+  feuchteReinigung: 0
+  damageType: 2
 --- !u!61 &3442341807841374355
 BoxCollider2D:
   m_ObjectHideFlags: 0

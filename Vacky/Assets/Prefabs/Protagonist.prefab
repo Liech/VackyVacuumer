@@ -327,6 +327,8 @@ MonoBehaviour:
   maxlife: 100
   lifebar: 1
   team: 0
+  vulnerability: 1
+  gotDamageSound: {fileID: 6461853921599703517, guid: 6d8d5945f6d975145a27bca587b94d27, type: 3}
 --- !u!114 &2389498530253544740
 MonoBehaviour:
   m_ObjectHideFlags: 0

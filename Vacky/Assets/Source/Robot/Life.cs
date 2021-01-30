@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum DamageCategory : int
+{
+  BonkDamage = 1,
+  ReinigungsDamage = 2
+}
+
 public class Life : MonoBehaviour
 {
   public int life = 100;
@@ -10,6 +16,9 @@ public class Life : MonoBehaviour
   public bool lifebar = false;
   private bool alive = true;
   public int team;
+  public DamageCategory vulnerability = DamageCategory.BonkDamage;
+
+  public GameObject gotDamageSound;
 
   // Start is called before the first frame update
   void Start()
@@ -28,8 +37,11 @@ public class Life : MonoBehaviour
     transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.5f + perc/2, 0.5f + perc/2);
   }
 
-  public void addDamage(int dmg)
+  public void addDamage(int dmg, DamageCategory category = DamageCategory.BonkDamage)
   {
+    if (vulnerability > category)
+      return;
+    if (gotDamageSound) Instantiate(gotDamageSound);
     life -= dmg;
     if (life < 0)
     {
