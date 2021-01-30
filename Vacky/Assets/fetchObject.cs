@@ -6,6 +6,8 @@ public class fetchObject : MonoBehaviour
 {
 
     public GameObject door;
+    public GameObject wuukie;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class fetchObject : MonoBehaviour
             return;
         Debug.Log("Medizin geschnappt!");
         Destroy(door);
+        wuukie.GetComponent<NextDialogQuest>().questDone("MEDIZIN");
 
         Destroy(gameObject); // destroy self
     }
