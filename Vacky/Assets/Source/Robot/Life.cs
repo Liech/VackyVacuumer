@@ -13,19 +13,18 @@ public class Life : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-    if (lifeBar == null)
-      throw new System.Exception("Lifebar not set");
-
   }
 
   // Update is called once per frame
   void Update()
   {
+    float perc = (float)life / (float)maxlife;
     if (lifeBar)
     {
       LifeBar img = lifeBar.GetComponent<LifeBar>();
-      img.setLife((float)life / (float)maxlife);
+      img.setLife(perc);
     }
+    transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.5f + perc/2, 0.5f + perc/2);
   }
 
   public void addDamage(int dmg)
@@ -37,7 +36,10 @@ public class Life : MonoBehaviour
       if (alive)
       {
         alive = false;
-        GetComponent<WASD>().enabled = false;
+        if (GetComponent<IController>())
+          GetComponent<IController>().enabled = false;
+        if (GetComponent<DangerousThing>())
+          GetComponent<DangerousThing>().On = false;
         transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
       }
     }
