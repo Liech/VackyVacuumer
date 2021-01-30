@@ -208,6 +208,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f188cd65a03505d469f5076b3a37b2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bonkMesh: {fileID: 0}
+  _bonkers: []
+  _bonkerCoords: []
+  _maxMemory: 5
+  _enabled: 0
 --- !u!114 &7226917779153083587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -222,7 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 100
   maxlife: 100
-  lifeBar: {fileID: 0}
+  lifebar: 1
 --- !u!114 &2389498530253544740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,7 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb36e2081284cc44988aaa7b1d15a049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
 --- !u!114 &5622031123256002915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +282,14 @@ MonoBehaviour:
   _viewMesh: {fileID: 0}
   _meshResolution: 3
   _maskDilation: 0.52
+  _viewRadiusBonk: 1
+  _viewAngleBonk: 360
+  _viewRadiusLida: 12
+  _viewAngleLida: 120
+  _viewRadiusCam: 120
+  _viewAngleCam: 15
+  _viewRadiusXRay: 15
+  _viewAngleXRay: 360
   _visMode: 2
 --- !u!114 &3399087673369565626
 MonoBehaviour:
@@ -291,7 +303,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac7bf6b1f808f34882d078d223df3ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AmmoBar: {fileID: 0}
   max_ammo: 100
   ammo: 0
 --- !u!1001 &1884707947364885115

@@ -7,7 +7,6 @@ using UnityEngine.Tilemaps;
 [RequireComponent(typeof(Ammo))]
 public class Dreck : MonoBehaviour
 {
-    public Tilemap tilemap;
     private int dirt_count = 0;
     private int num_points = 180;
 
@@ -23,26 +22,30 @@ public class Dreck : MonoBehaviour
         
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+  private void OnTriggerStay2D(Collider2D collision)
+  {
+    if (collision.tag == "Dreck")
     {
-        if (collision.tag == "Dreck")
+      dirt_count += 1;
+      //Debug.Log("Dreck Count: " + dirt_count);
+      GetComponent<Ammo>().incAmmo();
+
+      float radius = GetComponent<CircleCollider2D>().radius;
+      Vector3 pos = gameObject.transform.position;
+
+      foreach (var tilemap in Singleton.instance.DirtTileMaps)
+      {
+        for (int i = 0; i < num_points; i++)
         {
-            dirt_count += 1;
-            //Debug.Log("Dreck Count: " + dirt_count);
-            GetComponent<Ammo>().incAmmo();
-
-            float radius = GetComponent<CircleCollider2D>().radius;
-            Vector3 pos = gameObject.transform.position;
-
-            for (int i = 0; i < num_points; i++)
-            {
-                float angle = 2f * Mathf.PI / (float)num_points * i;
-                Vector3 contour_point = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0) + pos;
-                tilemap.SetTile(tilemap.WorldToCell(contour_point), null);
-            }
-            tilemap.SetTile(tilemap.WorldToCell(pos), null);
+          float angle = 2f * Mathf.PI / (float)num_points * i;
+          Vector3 contour_point = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0) + pos;
+          tilemap.SetTile(tilemap.WorldToCell(contour_point), null);
         }
+        tilemap.SetTile(tilemap.WorldToCell(pos), null);
+      }
+
     }
+  }
 
     public int GetDirtCount()
     {

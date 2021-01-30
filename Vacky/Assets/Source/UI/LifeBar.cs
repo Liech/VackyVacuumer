@@ -6,11 +6,11 @@ using UnityEngine.UI;
 public class LifeBar : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+  // Start is called before the first frame update
+  void Start()
+  {
+    Singleton.instance.lifebar = this;
+  }
 
     // Update is called once per frame
     void Update()
@@ -20,7 +20,6 @@ public class LifeBar : MonoBehaviour
 
   public void setLife(float percentage)
   {
-   
     if (percentage < 0) percentage = 0;
     if (percentage > 1) percentage = 1;
 

@@ -13,7 +13,7 @@ public class WASD : IController , IStunnable
   // Start is called before the first frame update
   void Start()
   {
-      
+    Singleton.instance.protagonist = gameObject;
   }
 
   // Update is called once per frame

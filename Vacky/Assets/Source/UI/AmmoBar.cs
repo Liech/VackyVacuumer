@@ -6,13 +6,14 @@ using UnityEngine.UI;
 public class AmmoBar : MonoBehaviour
 {
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        transform.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
-        for (int i = 1; i < transform.childCount; i++)
-            transform.GetChild(i).gameObject.GetComponent<Image>().enabled = false;
-    }
+  // Start is called before the first frame update
+  void Start()
+  {
+    Singleton.instance.dreckbar = this;
+    transform.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
+    for (int i = 1; i < transform.childCount; i++)
+      transform.GetChild(i).gameObject.GetComponent<Image>().enabled = false;
+  }
 
     // Update is called once per frame
     void Update()

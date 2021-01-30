@@ -7,7 +7,7 @@ public class Life : MonoBehaviour
 {
   public int life = 100;
   public int maxlife = 100;
-  public GameObject lifeBar;
+  public bool lifebar = false;
   private bool alive = true;
 
   // Start is called before the first frame update
@@ -19,9 +19,9 @@ public class Life : MonoBehaviour
   void Update()
   {
     float perc = (float)life / (float)maxlife;
-    if (lifeBar)
+    if (lifebar)
     {
-      LifeBar img = lifeBar.GetComponent<LifeBar>();
+      LifeBar img = Singleton.instance.lifebar;
       img.setLife(perc);
     }
     transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.5f + perc/2, 0.5f + perc/2);

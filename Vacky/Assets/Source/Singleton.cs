@@ -9,6 +9,9 @@ public class Singleton : MonoBehaviour
 
   public HashSet<Tilemap> DirtTileMaps;
   public HashSet<Tilemap> ShipTileMaps;
+  public LifeBar lifebar;
+  public AmmoBar dreckbar;
+  public GameObject protagonist;
 
   // Start is called before the first frame update
   public Singleton() 
