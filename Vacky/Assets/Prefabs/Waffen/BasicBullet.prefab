@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4115235228459678148}
   - component: {fileID: 7027867435053592620}
   - component: {fileID: 6974309192019011877}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BasicBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,6 +85,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 15
+  Stun: 4
+  On: 1
 --- !u!114 &6974309192019011877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9167850832040507930}
   - component: {fileID: 4082888337030039632}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}

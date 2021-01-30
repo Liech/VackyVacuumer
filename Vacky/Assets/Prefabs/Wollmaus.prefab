@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9113905086108213115}
   - component: {fileID: 7042239271332817616}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 559005431453236791}
   - component: {fileID: 7875419498429874163}
   - component: {fileID: 2647783339351329973}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wollmaus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,3 +198,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Damage: 15
   Stun: 4
+  On: 1
