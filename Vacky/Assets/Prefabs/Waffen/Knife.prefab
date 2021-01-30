@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9206176683281299178}
   - component: {fileID: 7580858739699873211}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 6889476948319741120}
   - component: {fileID: 3086364933737464920}
   - component: {fileID: 3442341807841374355}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SharpSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7802541853961890460}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Knife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
