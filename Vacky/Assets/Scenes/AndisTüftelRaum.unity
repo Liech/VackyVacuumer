@@ -128,17 +128,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6513879859547117270, guid: 03ba6a974135f99408d35e3a69b868f0, type: 3}
   m_PrefabInstance: {fileID: 5090721293042872752}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1655612098 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3810542534893154556, guid: a61f09387dc21f9429224d40346d1b23, type: 3}
-  m_PrefabInstance: {fileID: 3810542536531644990}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8e9be8a460e6b946b3e0c9aeea52e52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2035621529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3104076398069713988, guid: 03ba6a974135f99408d35e3a69b868f0, type: 3}
@@ -394,18 +383,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MaschinenRaum
       objectReference: {fileID: 0}
-    - target: {fileID: 7435311991751986214, guid: a61f09387dc21f9429224d40346d1b23, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
-    - target: {fileID: 7771697214040777890, guid: a61f09387dc21f9429224d40346d1b23, type: 3}
-      propertyPath: QuestsOnDialogEnd.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7771697214040777890, guid: a61f09387dc21f9429224d40346d1b23, type: 3}
-      propertyPath: QuestsOnDialogEnd.Array.data[0]
-      value: 
-      objectReference: {fileID: 1655612098}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a61f09387dc21f9429224d40346d1b23, type: 3}
 --- !u!1001 &5090721293042872752
