@@ -27,7 +27,7 @@ public class Bonk : MonoBehaviour
       
   }
 
-  public void trunOn()
+  public void turnOn()
   {
     _enabled = true;
   }
