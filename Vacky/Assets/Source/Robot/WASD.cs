@@ -10,7 +10,6 @@ public class WASD : IController , IStunnable
 
   private bool _isStunned = false;
   private bool _inMenue = false;
-  private bool _inDialog = false;
 
   // Start is called before the first frame update
   void Start()
@@ -52,17 +51,6 @@ public class WASD : IController , IStunnable
             return;
         }
         _inMenue = true;
-    }
-
-    // _inDialog handling da es sein kann, dass man sich im dialog noch bewegen möchte
-
-  public void dialogEscape()
-    {
-        _inDialog = false;
-    }
-  public void dialogStart()
-    {
-        _inDialog = true;
     }
 
   private IEnumerator stopStun(float seconds)
