@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 559005431453236791}
   - component: {fileID: 7875419498429874163}
   - component: {fileID: 2647783339351329973}
+  - component: {fileID: -3206755270161091147}
   m_Layer: 2
   m_Name: Wollmaus
   m_TagString: Untagged
@@ -183,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 20
   maxlife: 20
-  lifeBar: {fileID: 0}
+  lifebar: 0
 --- !u!114 &2647783339351329973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,3 +200,15 @@ MonoBehaviour:
   Damage: 15
   Stun: 4
   On: 1
+--- !u!114 &-3206755270161091147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064923044805925781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0a7aab711c42d458b66d4d9d58d10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

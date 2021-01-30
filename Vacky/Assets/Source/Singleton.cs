@@ -9,6 +9,7 @@ public class Singleton : MonoBehaviour
 
   public HashSet<Tilemap> DirtTileMaps;
   public HashSet<Tilemap> ShipTileMaps;
+  public HashSet<IsEnemy> Enemys;
   public LifeBar lifebar;
   public AmmoBar dreckbar;
   public GameObject protagonist;
@@ -18,6 +19,7 @@ public class Singleton : MonoBehaviour
   {
     DirtTileMaps = new HashSet<Tilemap>();
     ShipTileMaps = new HashSet<Tilemap>();
+    Enemys = new HashSet<IsEnemy>();
     instance = this;
   }
 
