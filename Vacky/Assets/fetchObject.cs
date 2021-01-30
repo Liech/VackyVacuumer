@@ -23,7 +23,7 @@ public class fetchObject : MonoBehaviour
     {
         if (!collision.gameObject.GetComponent<Upgradeable>())
             return;
-        Debug.Log("Medizin taken");
+        Debug.Log("Medizin geschnappt!");
         Destroy(door);
 
         Destroy(gameObject); // destroy self
