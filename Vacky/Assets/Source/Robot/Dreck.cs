@@ -43,4 +43,14 @@ public class Dreck : MonoBehaviour
             //Debug.Log(radius);
         }
     }
+
+    public int GetDirtCount()
+    {
+        return dirt_count;
+    }
+
+    public void SetDirtCount(int new_count)
+    {
+        dirt_count = new_count;
+    }
 }
