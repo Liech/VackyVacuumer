@@ -93,10 +93,10 @@ GameObject:
   - component: {fileID: 8585027741957310631}
   - component: {fileID: 885902383191631120}
   - component: {fileID: 4566671764637092535}
-  - component: {fileID: 559005431453236791}
   - component: {fileID: 7875419498429874163}
   - component: {fileID: 2647783339351329973}
   - component: {fileID: -3206755270161091147}
+  - component: {fileID: 3201112001879675098}
   m_Layer: 2
   m_Name: Wollmaus
   m_TagString: Untagged
@@ -154,22 +154,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &559005431453236791
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064923044805925781}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.36
 --- !u!114 &7875419498429874163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +196,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d0a7aab711c42d458b66d4d9d58d10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!60 &3201112001879675098
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7064923044805925781}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.27023816, y: 0.08835006}
+      - {x: 0.120703936, y: 0.1466999}
+      - {x: -0.009987354, y: 0.32229912}
+      - {x: -0.22294259, y: 0.30558848}
+      - {x: -0.38211942, y: 0.17566848}
+      - {x: -0.44206387, y: -0.008625001}
+      - {x: -0.10107565, y: -0.13434947}
+      - {x: -0.026698828, y: -0.268381}
+      - {x: 0.078115046, y: -0.32681358}
+      - {x: 0.26610398, y: -0.3069104}
+      - {x: 0.41174257, y: -0.22731113}
+      - {x: 0.44817019, y: 0.0077545643}
+      - {x: 0.41910172, y: 0.09470445}
