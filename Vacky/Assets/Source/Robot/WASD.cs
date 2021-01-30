@@ -21,23 +21,15 @@ public class WASD : IController , IStunnable
   // Update is called once per frame
   void FixedUpdate()
   {
-    if (_isStunned || _inMenue)
+    if (_isStunned || Singleton.instance.blockInput)
       return;
 
     bool w = Input.GetKey(KeyCode.W);
     bool a = Input.GetKey(KeyCode.A);
     bool s = Input.GetKey(KeyCode.S);
     bool d = Input.GetKey(KeyCode.D);
-    bool e = Input.GetKey(KeyCode.E);
 
-        //idee: dialogtrigger durch einen universalen E-Trigger hier ersetzen zur interaktion mit anderen objekten
-
-        if(e && FindObjectOfType<DialogTrigger>() != null & FindObjectOfType<DialogTrigger>()._active)
-        {
-            FindObjectOfType<DialogTrigger>().triggerDialog();
-        }
-
-        float xSpeed = -((a ? -1.0f : 0) * BackwardsDrive + (d ? 1.0f : 0)) * RotationSpeed;
+    float xSpeed = -((a ? -1.0f : 0) * BackwardsDrive + (d ? 1.0f : 0)) * RotationSpeed;
     float ySpeed = (s ? -1.0f : 0) + (w ? 1.0f : 0)*Speed;
 
     transform.GetComponent<Rigidbody2D>().angularVelocity = xSpeed;

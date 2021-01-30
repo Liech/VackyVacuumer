@@ -46,8 +46,23 @@ TagManager:
   - name: Ground
     uniqueID: 3694547189
     locked: 0
+  - name: OnGround
+    uniqueID: 3298193115
+    locked: 0
+  - name: OnTopOffOnGround
+    uniqueID: 3291333663
+    locked: 0
   - name: Character
     uniqueID: 1621495897
+    locked: 0
+  - name: AboveRobot
+    uniqueID: 253602879
+    locked: 0
+  - name: VeryAboveRobot
+    uniqueID: 3129961041
+    locked: 0
+  - name: Highground
+    uniqueID: 2425911177
     locked: 0
   - name: Foreground
     uniqueID: 211889735

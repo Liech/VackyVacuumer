@@ -9,6 +9,9 @@ public class Upgradeable : MonoBehaviour
   bool pressed = false;
   public void FixedUpdate()
   {
+    if (Singleton.instance.blockInput)
+      return;
+
     bool forward   = Input.GetKey(KeyCode.Q);
     bool backwards = Input.GetKey(KeyCode.E);
     
