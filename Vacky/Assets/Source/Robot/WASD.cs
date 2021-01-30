@@ -9,6 +9,8 @@ public class WASD : IController , IStunnable
   public float BackwardsDrive = 1.0f;
 
   private bool _isStunned = false;
+  private bool _inMenue = false;
+  private bool _inDialog = false;
 
   // Start is called before the first frame update
   void Start()
@@ -19,15 +21,23 @@ public class WASD : IController , IStunnable
   // Update is called once per frame
   void FixedUpdate()
   {
-    if (_isStunned)
+    if (_isStunned || _inMenue)
       return;
 
     bool w = Input.GetKey(KeyCode.W);
     bool a = Input.GetKey(KeyCode.A);
     bool s = Input.GetKey(KeyCode.S);
     bool d = Input.GetKey(KeyCode.D);
+    bool e = Input.GetKey(KeyCode.E);
 
-    float xSpeed = -((a ? -1.0f : 0) * BackwardsDrive + (d ? 1.0f : 0)) * RotationSpeed;
+        //idee: dialogtrigger durch einen universalen E-Trigger hier ersetzen zur interaktion mit anderen objekten
+
+        if(e && FindObjectOfType<DialogTrigger>() != null & FindObjectOfType<DialogTrigger>()._active)
+        {
+            FindObjectOfType<DialogTrigger>().triggerDialog();
+        }
+
+        float xSpeed = -((a ? -1.0f : 0) * BackwardsDrive + (d ? 1.0f : 0)) * RotationSpeed;
     float ySpeed = (s ? -1.0f : 0) + (w ? 1.0f : 0)*Speed;
 
     transform.GetComponent<Rigidbody2D>().angularVelocity = xSpeed;
@@ -41,6 +51,27 @@ public class WASD : IController , IStunnable
     _isStunned = true;
     StartCoroutine("stopStun", seconds);
   }
+
+  public void goInAndOutOfMenue()
+    {
+        if(_inMenue)
+        {
+            _inMenue = false;
+            return;
+        }
+        _inMenue = true;
+    }
+
+    // _inDialog handling da es sein kann, dass man sich im dialog noch bewegen möchte
+
+  public void dialogEscape()
+    {
+        _inDialog = false;
+    }
+  public void dialogStart()
+    {
+        _inDialog = true;
+    }
 
   private IEnumerator stopStun(float seconds)
   {
