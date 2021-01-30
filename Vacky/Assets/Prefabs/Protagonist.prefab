@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 7226917779153083587}
   - component: {fileID: 2389498530253544740}
   - component: {fileID: 7350881813144544005}
+  - component: {fileID: -4655872868360399690}
   m_Layer: 0
   m_Name: Protagonist
   m_TagString: Untagged
@@ -247,6 +248,19 @@ MonoBehaviour:
   StartVelocity: 5
   Bullet: {fileID: 6402330969068998087, guid: 82842108becb4f94fbc17cd852256f54, type: 3}
   spawnDistance: 0.4
+--- !u!114 &-4655872868360399690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504719881398948248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb36e2081284cc44988aaa7b1d15a049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 0}
 --- !u!1001 &1884707947364885115
 PrefabInstance:
   m_ObjectHideFlags: 0

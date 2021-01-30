@@ -220,6 +220,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5307815081089642267, guid: f2fb9322d048a3a42a59f11981bfe084, type: 3}
   m_PrefabInstance: {fileID: 2649588714032124198}
   m_PrefabAsset: {fileID: 0}
+--- !u!1839735485 &5358180169323753348 stripped
+Tilemap:
+  m_CorrespondingSourceObject: {fileID: 7969452263558184610, guid: f2fb9322d048a3a42a59f11981bfe084, type: 3}
+  m_PrefabInstance: {fileID: 2649588714032124198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8166870338025168350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -227,6 +232,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5827935547853887044}
     m_Modifications:
+    - target: {fileID: -4655872868360399690, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
+      propertyPath: tilemap
+      value: 
+      objectReference: {fileID: 5358180169323753348}
     - target: {fileID: 3370603315005202161, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
       propertyPath: m_SortingLayer
       value: 2
