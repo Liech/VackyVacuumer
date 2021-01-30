@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f188cd65a03505d469f5076b3a37b2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bonkMesh: {fileID: 0}
+  _bonkMesh: {fileID: 5845204273846962250, guid: 7538c94c89d7e7449a3ecb4756285082, type: 3}
   _bonkers: []
   _bonkerCoords: []
   _maxMemory: 5
