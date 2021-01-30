@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FireWeapon : MonoBehaviour
 {
+  bool fired = false;
   // Start is called before the first frame update
   void Start()
   {
@@ -13,9 +14,13 @@ public class FireWeapon : MonoBehaviour
   // Update is called once per frame
   void FixedUpdate()
   {
-    if (Input.GetKeyDown(KeyCode.Space))
+    bool pressed = Input.GetKey(KeyCode.Space);
+    if (pressed && !fired)
     {
       GetComponent<IFireable>().fire();
+      fired = true;
     }
+    else if (!pressed)
+      fired = false;
   }
 }
