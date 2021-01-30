@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6862176655373809535}
   - component: {fileID: 8826390672163901880}
   - component: {fileID: 1544919592}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Wooki
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,6 +55,8 @@ MonoBehaviour:
   - GGrWWRGHH!!! Go clean up!
   sprites:
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
+  QuestID: TALK
+  QuestsOnDialogEnd: []
 --- !u!58 &3754926488310969269
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -108,6 +110,8 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
+  QuestID: TALK
+  QuestsOnDialogEnd: []
 --- !u!114 &8826390672163901880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +146,8 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
+  QuestID: TALK
+  QuestsOnDialogEnd: []
 --- !u!1 &5664506828160998485
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7850129090882958910}
   - component: {fileID: 6038848692081385467}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}

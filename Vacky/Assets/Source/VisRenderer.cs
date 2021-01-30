@@ -25,62 +25,87 @@ public class VisRenderer : MonoBehaviour
   public float _viewAngleXRay = 360;
   public VisMode _visMode;
 
-    void DrawFieldOfView()
+  void DrawFieldOfView()
+  {
+    int stepCount = Mathf.RoundToInt(_viewAngle * _meshResolution);
+    int stepCountBase = Mathf.RoundToInt(360 * _meshResolution);
+    float stepAng = _viewAngle / stepCount;
+    List<ViewCastData> viewPts = new List<ViewCastData>();
+    List<Vector3> basicView = new List<Vector3>();
+    basicView.Add(Vector3.zero);
+    for (int i = 0; i <= stepCountBase; i++)
     {
-        int stepCount = Mathf.RoundToInt(_viewAngle * _meshResolution);
-        float stepAng = _viewAngle / stepCount;
-        List<ViewCastData> viewPts = new List<ViewCastData>();
-        for ( int i = 0; i <= stepCount; i++)
-        {
-            float ang = transform.localEulerAngles.z - _viewAngle / 2 + stepAng * i;
-            //Debug.DrawLine(transform.position, transform.position + dirFromAngle(ang, true) * _viewRadius, Color.red);
-            ViewCastData cast = viewCast(ang, _visMode != VisMode.XRay);
-            viewPts.Add(cast);
-        }
+      float ang = transform.localEulerAngles.z - _viewAngle / 2 + stepAng * i;
+      basicView.Add(transform.position + dirFromAngle(ang, true) * _viewRadiusBonk);
+    }  
 
-        int vertCount = viewPts.Count + 1;
-        Vector3[] verts=new Vector3[1]; 
-        int[] tris = new int[3]; 
-
-        
-        if (_visMode == VisMode.Cam || _visMode == VisMode.XRay || _visMode == VisMode.Bonk)
-        {
-            verts = new Vector3[vertCount];
-            tris = new int[(vertCount - 2) * 3];
-            verts[0] = Vector3.zero;
-            for (int i = 0; i < vertCount - 1; i++)
-            {
-                verts[i + 1] = transform.InverseTransformPoint(viewPts[i]._point) - transform.InverseTransformDirection(viewPts[i]._targetNormal) * _maskDilation;
-                if (i < vertCount - 2)
-                {
-                    tris[i * 3] = 0;
-                    tris[i * 3 + 1] = i + 2;
-                    tris[i * 3 + 2] = i + 1;
-                }
-            }
-        }
-        if( _visMode == VisMode.Lida)
-        {
-            verts = new Vector3[vertCount*3];
-            tris = new int[vertCount*3];
-            for (int i = 0; i < vertCount-1; i++)
-            {
-                verts[i * 3] = transform.InverseTransformPoint(viewPts[i]._point);
-                verts[i*3 + 1] = transform.InverseTransformPoint(viewPts[i]._point) + (Vector3.up +Vector3.right) *_maskDilation*0.3f;
-                verts[i*3 + 2] = transform.InverseTransformPoint(viewPts[i]._point) + (Vector3.up +Vector3.left ) *_maskDilation*0.3f;
-                
-                tris[i * 3] = i*3;
-                tris[i * 3 + 1] = i*3 + 2;
-                tris[i * 3 + 2] = i*3 + 1;
-
-            }
-        }
-
-        _viewMesh.Clear();
-        _viewMesh.vertices = verts;
-        _viewMesh.triangles = tris;
-        _viewMesh.RecalculateNormals();
+    for (int i = 0; i <= stepCount; i++)
+    {
+      float ang = transform.localEulerAngles.z - _viewAngle / 2 + stepAng * i;
+      //Debug.DrawLine(transform.position, transform.position + dirFromAngle(ang, true) * _viewRadius, Color.red);
+      ViewCastData cast = viewCast(ang, _visMode != VisMode.XRay);
+      viewPts.Add(cast);
     }
+
+    int vertCount = viewPts.Count + 1;
+    Vector3[] verts = new Vector3[1];
+    int[] tris = new int[3];
+
+
+    if (_visMode == VisMode.Cam || _visMode == VisMode.XRay || _visMode == VisMode.Bonk)
+    {
+      verts = new Vector3[vertCount+basicView.Count];
+      tris = new int[(vertCount - 2) * 3 + (basicView.Count-2)*3];
+      verts[0] = Vector3.zero;
+      for (int i = 0; i < vertCount - 1; i++)
+      {
+        verts[i + 1] = transform.InverseTransformPoint(viewPts[i]._point) - transform.InverseTransformDirection(viewPts[i]._targetNormal) * _maskDilation;
+        if (i < vertCount - 2)
+        {
+          tris[i * 3] = 0;
+          tris[i * 3 + 1] = i + 2;
+          tris[i * 3 + 2] = i + 1;
+        }
+      }
+    }
+    if (_visMode == VisMode.Lida)
+    {
+      verts = new Vector3[vertCount * 3 + basicView.Count];
+      tris = new int[vertCount * 3 + (basicView.Count - 2) * 3];
+      for (int i = 0; i < vertCount - 1; i++)
+      {
+        verts[i * 3] = transform.InverseTransformPoint(viewPts[i]._point);
+        verts[i * 3 + 1] = transform.InverseTransformPoint(viewPts[i]._point) + (Vector3.up + Vector3.right) * _maskDilation * 0.3f;
+        verts[i * 3 + 2] = transform.InverseTransformPoint(viewPts[i]._point) + (Vector3.up + Vector3.left) * _maskDilation * 0.3f;
+
+        tris[i * 3] = i * 3;
+        tris[i * 3 + 1] = i * 3 + 2;
+        tris[i * 3 + 2] = i * 3 + 1;
+
+      }
+    }
+
+    int offset = vertCount;
+    for(int i = 0; i<basicView.Count; i++)
+    {
+      if(i==0)
+        verts[i + vertCount] = basicView[i];
+      else
+        verts[i + vertCount] = transform.InverseTransformPoint(basicView[i]);
+
+      if (i < basicView.Count - 2)
+      {
+        tris[i * 3 + (offset-2)*3] = offset;
+        tris[i * 3 + 1 + (offset-2) * 3] = i + 2 + offset;
+        tris[i * 3 + 2 + (offset-2) * 3] = i + 1 + offset;
+      }
+    }
+
+    _viewMesh.Clear();
+    _viewMesh.vertices = verts;
+    _viewMesh.triangles = tris;
+    _viewMesh.RecalculateNormals();
+  }
 
   public void upgrade()
   {
@@ -146,7 +171,7 @@ public class VisRenderer : MonoBehaviour
       GetComponent<Bonk>().turnOn();
       _viewAngle = _viewAngleBonk;
       _viewRadius = _viewRadiusBonk;
-      _maskDilation = 0.1f;
+      _maskDilation = 0.05f;
 
     }
     else if (_visMode == VisMode.Lida)
