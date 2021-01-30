@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WASD : MonoBehaviour
+public class WASD : MonoBehaviour , IStunnable
 {
   public float Speed = 1.0f;
   public float RotationSpeed = 1.0f;

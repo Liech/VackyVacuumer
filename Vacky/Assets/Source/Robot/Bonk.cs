@@ -23,5 +23,7 @@ public class Bonk : MonoBehaviour
 
   void OnCollisionEnter2D(Collision2D collision)
   {
+    //GetComponent<Life>().addDamage(10);
+    Debug.Log("Bonk");
   }
 }
