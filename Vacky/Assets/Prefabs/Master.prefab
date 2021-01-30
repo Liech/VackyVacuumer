@@ -245,6 +245,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2457083232015969880, guid: cea31161f8712d545b7410eccd6fd5fb, type: 3}
   m_PrefabInstance: {fileID: 2204480054986085548}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6513879859547117270 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4968052951877780090, guid: cea31161f8712d545b7410eccd6fd5fb, type: 3}
+  m_PrefabInstance: {fileID: 2204480054986085548}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2649588714032124198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -483,6 +488,10 @@ PrefabInstance:
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 5358180169323753348}
+    - target: {fileID: 3399087673369565626, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
+      propertyPath: AmmoBar
+      value: 
+      objectReference: {fileID: 6513879859547117270}
     - target: {fileID: 6504719881398948248, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
       propertyPath: m_Name
       value: Protagonist

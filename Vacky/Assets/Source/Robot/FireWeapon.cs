@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Dreck))]
+[RequireComponent(typeof(Ammo))]
 public class FireWeapon : MonoBehaviour
 {
   bool fired = false;
@@ -16,12 +16,12 @@ public class FireWeapon : MonoBehaviour
   void FixedUpdate()
   {
     bool pressed = Input.GetKey(KeyCode.Space);
-    int dirt_count = GetComponent<Dreck>().GetDirtCount();
-    if (pressed && !fired &&  dirt_count > 0 && GetComponentInChildren<IFireable>())
+    
+    if (pressed && !fired &&  GetComponent<Ammo>().getAmmo() > 0 && GetComponentInChildren<IFireable>())
     {
       GetComponentInChildren<IFireable>().fire();
       fired = true;
-      GetComponent<Dreck>().SetDirtCount(dirt_count - 1);
+      GetComponent<Ammo>().decAmmo();
     }
     else if (!pressed)
       fired = false;

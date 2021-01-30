@@ -9,7 +9,7 @@ Shader "Custom/Stencil Mask"
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" "Qeue"="Geometry-100" }
+        Tags { "RenderType"="Opaque" "Queue"="Geometry-100" }
         ColorMask 0
         ZWrite off
         LOD 200

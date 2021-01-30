@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: -4655872868360399690}
   - component: {fileID: 5622031123256002915}
   - component: {fileID: 1603147680}
+  - component: {fileID: 3399087673369565626}
   m_Layer: 0
   m_Name: Protagonist
   m_TagString: Untagged
@@ -278,6 +279,21 @@ MonoBehaviour:
   _meshResolution: 3
   _maskDilation: 0.52
   _visMode: 2
+--- !u!114 &3399087673369565626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504719881398948248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac7bf6b1f808f34882d078d223df3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AmmoBar: {fileID: 0}
+  max_ammo: 100
+  ammo: 0
 --- !u!1001 &1884707947364885115
 PrefabInstance:
   m_ObjectHideFlags: 0

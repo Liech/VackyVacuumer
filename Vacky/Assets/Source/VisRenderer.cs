@@ -13,10 +13,17 @@ public class VisRenderer : MonoBehaviour
     public Mesh _viewMesh;
 
     public float _meshResolution;
-
     public float _maskDilation = 0.8f;
 
-    public VisMode _visMode;
+  public float _viewRadiusBonk = 1;
+  public float _viewAngleBonk = 360;
+  public float _viewRadiusLida = 12;
+  public float _viewAngleLida = 120;
+  public float _viewRadiusCam = 15;
+  public float _viewAngleCam = 120;
+  public float _viewRadiusXRay = 15;
+  public float _viewAngleXRay = 360;
+  public VisMode _visMode;
 
     void DrawFieldOfView()
     {
@@ -36,7 +43,7 @@ public class VisRenderer : MonoBehaviour
         int[] tris = new int[3]; 
 
         
-        if (_visMode == VisMode.Cam || _visMode == VisMode.XRay)
+        if (_visMode == VisMode.Cam || _visMode == VisMode.XRay || _visMode == VisMode.Bonk)
         {
             verts = new Vector3[vertCount];
             tris = new int[(vertCount - 2) * 3];
@@ -78,11 +85,28 @@ public class VisRenderer : MonoBehaviour
   public void upgrade()
   {
     if (_visMode == VisMode.Bonk)
+    {
+      GetComponent<Bonk>().turnOff();
       _visMode = VisMode.Lida;
+      _viewAngle = _viewAngleLida;
+      _viewRadius = _viewRadiusLida;
+      _maskDilation = 0.3f;
+
+    }
     else if (_visMode == VisMode.Lida)
+    {
       _visMode = VisMode.Cam;
-    else if (_visMode == VisMode.Lida)
+      _viewAngle = _viewAngleCam;
+      _viewRadius = _viewRadiusCam;
+      _maskDilation = 0.8f;
+    }
+    else if (_visMode == VisMode.Cam)
+    {
       _visMode = VisMode.XRay;
+      _viewAngle = _viewAngleXRay;
+      _viewRadius = _viewRadiusXRay;
+      _maskDilation = 0.8f;
+    }
   }
 
     ViewCastData viewCast(float globAng, bool colide)
@@ -114,11 +138,41 @@ public class VisRenderer : MonoBehaviour
         _viewMeshFilter.mesh = _viewMesh;
     }
 
-    // Update is called once per frame
-    void LateUpdate()
+  // Update is called once per frame
+  void LateUpdate()
+  {
+    if (_visMode == VisMode.Bonk)
     {
-        DrawFieldOfView();   
+      GetComponent<Bonk>().turnOn();
+      _viewAngle = _viewAngleBonk;
+      _viewRadius = _viewRadiusBonk;
+      _maskDilation = 0.1f;
+
     }
+    else if (_visMode == VisMode.Lida)
+    {
+      GetComponent<Bonk>().turnOff();
+      _viewAngle = _viewAngleLida;
+      _viewRadius = _viewRadiusLida;
+      _maskDilation = 0.3f;
+    }
+    else if (_visMode == VisMode.Cam)
+    {
+      GetComponent<Bonk>().turnOff();
+      _viewAngle = _viewAngleCam;
+      _viewRadius = _viewRadiusCam;
+      _maskDilation = 0.8f;
+    }
+    else if (_visMode == VisMode.XRay)
+    {
+      GetComponent<Bonk>().turnOff();
+      _viewAngle = _viewAngleXRay;
+      _viewRadius = _viewRadiusXRay;
+      _maskDilation = 0.8f;
+    }
+
+      DrawFieldOfView();   
+  }
 
 
     public struct ViewCastData
