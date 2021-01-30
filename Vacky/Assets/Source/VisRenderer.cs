@@ -13,10 +13,17 @@ public class VisRenderer : MonoBehaviour
     public Mesh _viewMesh;
 
     public float _meshResolution;
-
     public float _maskDilation = 0.8f;
 
-    public VisMode _visMode;
+  public float _viewRadiusBonk = 1;
+  public float _viewAngleBonk = 360;
+  public float _viewRadiusLida = 12;
+  public float _viewAngleLida = 120;
+  public float _viewRadiusCam = 120;
+  public float _viewAngleCam = 15;
+  public float _viewRadiusXRay = 150;
+  public float _viewAngleXRay = 360;
+  public VisMode _visMode;
 
     void DrawFieldOfView()
     {
@@ -36,7 +43,7 @@ public class VisRenderer : MonoBehaviour
         int[] tris = new int[3]; 
 
         
-        if (_visMode == VisMode.Cam || _visMode == VisMode.XRay)
+        if (_visMode == VisMode.Cam || _visMode == VisMode.XRay || _visMode == VisMode.Bonk)
         {
             verts = new Vector3[vertCount];
             tris = new int[(vertCount - 2) * 3];
@@ -78,11 +85,22 @@ public class VisRenderer : MonoBehaviour
   public void upgrade()
   {
     if (_visMode == VisMode.Bonk)
+    {
       _visMode = VisMode.Lida;
+      _viewAngle = _viewAngleLida;
+      _viewRadius = _viewRadiusLida;
+
+    }
     else if (_visMode == VisMode.Lida)
+    {
       _visMode = VisMode.Cam;
+      _viewAngle = _viewAngleCam;
+      _viewRadius = _viewRadiusCam;
+    }
     else if (_visMode == VisMode.Lida)
       _visMode = VisMode.XRay;
+    _viewAngle = _viewAngleXRay;
+    _viewRadius = _viewRadiusXRay;
   }
 
     ViewCastData viewCast(float globAng, bool colide)
