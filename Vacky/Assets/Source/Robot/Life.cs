@@ -37,8 +37,8 @@ public class Life : MonoBehaviour
       if (alive)
       {
         alive = false;
-        if (GetComponent<IController>())
-          GetComponent<IController>().enabled = false;
+        foreach (var comp in GetComponents<IController>())
+          comp.enabled = false;
         if (GetComponent<DangerousThing>())
           GetComponent<DangerousThing>().On = false;
         transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
