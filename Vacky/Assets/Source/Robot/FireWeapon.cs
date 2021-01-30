@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Ammo))]
-public class FireWeapon : MonoBehaviour
+public class FireWeapon : IController
 {
   bool fired = false;
   // Start is called before the first frame update
