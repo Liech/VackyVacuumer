@@ -25,8 +25,8 @@ public class LifeBar : MonoBehaviour
     if (percentage > 1) percentage = 1;
 
     int imgNr = (int)(percentage * (transform.childCount - 1));
-    Debug.Log(imgNr);
-    Debug.Log(percentage);
+    //Debug.Log(imgNr);
+    //Debug.Log(percentage);
     for (int i = 0; i < transform.childCount; i++)
       transform.GetChild(i).gameObject.GetComponent<Image>().enabled = imgNr == i;
   }
