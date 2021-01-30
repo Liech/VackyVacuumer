@@ -8,6 +8,7 @@ public class Life : MonoBehaviour
   public int life = 100;
   public int maxlife = 100;
   public GameObject lifeBar;
+  private bool alive = true;
 
   // Start is called before the first frame update
   void Start()
@@ -31,6 +32,14 @@ public class Life : MonoBehaviour
   {
     life -= dmg;
     if (life < 0)
+    {
       life = 0;
+      if (alive)
+      {
+        alive = false;
+        GetComponent<WASD>().enabled = false;
+        transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
+      }
+    }
   }
 }
