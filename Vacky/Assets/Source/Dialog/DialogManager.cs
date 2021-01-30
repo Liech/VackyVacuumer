@@ -14,13 +14,16 @@ public class DialogManager : MonoBehaviour
     public Text name;
     public Text dialogText;
 
+  bool schonmalgefuellt = false;
+
     public void StarteDialog (Dialog dialog)
     {
-        if (dialog != null)
+        if (dialog != null )
         {
             Debug.Log(dialogStuecke.Count);
-            if (dialogStuecke.Count != 0)
+            if (dialogStuecke.Count == 0 && !schonmalgefuellt)
             {
+                 schonmalgefuellt = true;
                 Debug.Log("2");
 
                 name.text = dialog.name;
@@ -56,6 +59,7 @@ public class DialogManager : MonoBehaviour
     public void DialogEnde()
     {
         Debug.Log("Ende");
+    Destroy(name);
         //FindObjectOfType<WASD>().dialogEscape();
     }
 }
