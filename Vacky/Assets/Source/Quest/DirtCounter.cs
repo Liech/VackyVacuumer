@@ -8,7 +8,7 @@ public class DirtCounter : MonoBehaviour
   public float extendX = 2;
   public float extendY = 2;
   public int successAt = 4;
-  public GameObject quest;
+  public List<GameObject> quests;
   public string ID = "CLEAN";
 
   void checkSuccess()
@@ -35,7 +35,8 @@ public class DirtCounter : MonoBehaviour
     if (counter <= successAt)
     {
       Debug.Log("QUEST DONE: Dirt -- " + ID);
-      quest.GetComponent<Quest>().questDone(ID);
+      foreach(var quest in quests) 
+        quest.GetComponent<Quest>().questDone(ID);
       Destroy(gameObject);
     }
     else
