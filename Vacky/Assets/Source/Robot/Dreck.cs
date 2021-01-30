@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Tilemaps;
 
 
+[RequireComponent(typeof(Ammo))]
 public class Dreck : MonoBehaviour
 {
     public Tilemap tilemap;
@@ -19,30 +20,8 @@ public class Dreck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //tilemap.SetTile(tilemap.WorldToCell(gameObject.transform.position), null);
+        
     }
-
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Dreck")
-    //    {
-    //        dirt_count += 1;
-    //        Debug.Log("Dreck Count: " + dirt_count);
-
-    //        float radius = GetComponent<CircleCollider2D>().radius;
-    //        Vector3 pos = gameObject.transform.position;
-
-    //        for (int i = 0; i<num_points; i++)
-    //        {
-    //            float angle = 2f * Mathf.PI / (float) num_points * i;
-    //            Vector3 contour_point = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0) + pos;
-    //            tilemap.SetTile(tilemap.WorldToCell(contour_point), null);
-    //            //Debug.Log(contour_point);
-    //        }
-    //        tilemap.SetTile(tilemap.WorldToCell(pos), null);
-    //        //Debug.Log(radius);
-    //    }
-    //}
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -50,6 +29,8 @@ public class Dreck : MonoBehaviour
         {
             dirt_count += 1;
             Debug.Log("Dreck Count: " + dirt_count);
+            //GetComponent<Ammo>().setAmmo(GetComponent<Ammo>().getAmmo() + 1);   // increase Ammo by 1
+            GetComponent<Ammo>().incAmmo();
 
             float radius = GetComponent<CircleCollider2D>().radius;
             Vector3 pos = gameObject.transform.position;
@@ -59,10 +40,8 @@ public class Dreck : MonoBehaviour
                 float angle = 2f * Mathf.PI / (float)num_points * i;
                 Vector3 contour_point = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0) + pos;
                 tilemap.SetTile(tilemap.WorldToCell(contour_point), null);
-                //Debug.Log(contour_point);
             }
             tilemap.SetTile(tilemap.WorldToCell(pos), null);
-            //Debug.Log(radius);
         }
     }
 

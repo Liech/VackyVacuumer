@@ -160,6 +160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3112955914179594338}
   - component: {fileID: 2211108063857980060}
+  - component: {fileID: 6670356957636477896}
   m_Layer: 5
   m_Name: Lifebar
   m_TagString: Untagged
@@ -207,6 +208,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c13acff5608ad147b1f2f18435f7954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6670356957636477896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931485170538064873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34cdee7d302984746bbcab4c76a0a1e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1034845072236446307
