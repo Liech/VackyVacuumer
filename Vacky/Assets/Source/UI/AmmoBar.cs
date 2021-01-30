@@ -20,11 +20,12 @@ public class AmmoBar : MonoBehaviour
         
     }
 
-    public void setAmmo(int ammo)
+    public void setAmmo(float ammo_percentage)
     {
-        int imgNr = Mathf.Min(ammo, transform.childCount - 1);
-        Debug.Log("Ammo:" + ammo);
-        Debug.Log("Img:" + imgNr);
+        //int imgNr = Mathf.Min(ammo, transform.childCount - 1);
+        //Debug.Log("Ammo:" + ammo);
+        //Debug.Log("Img:" + imgNr);
+        int imgNr = (int)(ammo_percentage * (transform.childCount - 1));
 
         for (int i = 0; i < transform.childCount; i++)
             transform.GetChild(i).gameObject.GetComponent<Image>().enabled = imgNr == i;
