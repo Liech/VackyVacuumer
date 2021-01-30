@@ -6,17 +6,6 @@ public class Upgrade : MonoBehaviour
 {
   public GameObject UpgraderObject;
 
-  // Start is called before the first frame update
-  void Start()
-  {
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-
-  }
-
   public virtual void doUpgrade(GameObject target)
   {
     if (!UpgraderObject)
