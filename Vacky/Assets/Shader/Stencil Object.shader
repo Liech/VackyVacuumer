@@ -77,6 +77,7 @@ Shader "Custom/Stencil Object"
 			{
 				fixed4 c = SampleSpriteTexture(IN.texcoord) * IN.color;
 				c.rgb *= c.a;
+				//c.g = 1.0; for xray mode
 				return c;
 			}
 		ENDCG

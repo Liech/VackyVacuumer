@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 738325272772241093}
   - component: {fileID: 7020529696779194546}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5964523901671156699}
   - component: {fileID: 4602354062642926451}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: DustGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
