@@ -5302,6 +5302,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1511458617113197693, guid: d2a756b1d32cec044add016a7f1738f1, type: 3}
   m_PrefabInstance: {fileID: 2312602419020598402}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3810542534893154556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1511458617113197694, guid: d2a756b1d32cec044add016a7f1738f1, type: 3}
+  m_PrefabInstance: {fileID: 2312602419020598402}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e9be8a460e6b946b3e0c9aeea52e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3810542534791626866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5435,6 +5446,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6862176655373809535, guid: ace8321da3740c3448704c9d131f8edc, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6862176655373809535, guid: ace8321da3740c3448704c9d131f8edc, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.data[0]
+      value: 
+      objectReference: {fileID: 3810542534893154556}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ace8321da3740c3448704c9d131f8edc, type: 3}
 --- !u!1 &3873251439637781815 stripped
