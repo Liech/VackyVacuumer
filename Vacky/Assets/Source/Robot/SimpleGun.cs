@@ -22,10 +22,11 @@ public class SimpleGun : IFireable
 
   public override void fire()
   {
-    float angle = Mathf.PI * transform.GetComponent<Rigidbody2D>().rotation / 180.0f;
+
+    float angle = Mathf.PI * transform.parent.GetComponent<Rigidbody2D>().rotation / 180.0f;
     Vector2 dir = new Vector2(Mathf.Sin(-angle), Mathf.Cos(-angle)) * spawnDistance;
 
-    GameObject g = Instantiate(Bullet,transform.position + new Vector3(dir.x,dir.y,0),transform.rotation);
+    GameObject g = Instantiate(Bullet,transform.parent.position + new Vector3(dir.x,dir.y,0),transform.parent.rotation);
     g.GetComponent<Rigidbody2D>().velocity = dir * StartVelocity;
   }
 }
