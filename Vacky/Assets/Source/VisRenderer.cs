@@ -19,8 +19,8 @@ public class VisRenderer : MonoBehaviour
   public float _viewAngleBonk = 360;
   public float _viewRadiusLida = 12;
   public float _viewAngleLida = 120;
-  public float _viewRadiusCam = 15;
-  public float _viewAngleCam = 120;
+  public float _viewRadiusCam = 120;
+  public float _viewAngleCam = 15;
   public float _viewRadiusXRay = 15;
   public float _viewAngleXRay = 360;
   public VisMode _visMode;
