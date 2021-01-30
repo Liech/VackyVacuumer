@@ -8,7 +8,7 @@ public class Dreck : MonoBehaviour
 {
     public Tilemap tilemap;
     private int dirt_count = 0;
-    private int num_points = 12;
+    private int num_points = 180;
 
     // Start is called before the first frame update
     void Start()
@@ -34,12 +34,23 @@ public class Dreck : MonoBehaviour
 
             for (int i = 0; i<num_points; i++)
             {
-                float angle = 2f * Mathf.PI / num_points * i;
+                float angle = 2f * Mathf.PI / (float) num_points * i;
                 Vector3 contour_point = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0) + pos;
                 tilemap.SetTile(tilemap.WorldToCell(contour_point), null);
-                Debug.Log(contour_point);
+                //Debug.Log(contour_point);
             }
             tilemap.SetTile(tilemap.WorldToCell(pos), null);
+            //Debug.Log(radius);
         }
+    }
+
+    public int GetDirtCount()
+    {
+        return dirt_count;
+    }
+
+    public void SetDirtCount(int new_count)
+    {
+        dirt_count = new_count;
     }
 }
