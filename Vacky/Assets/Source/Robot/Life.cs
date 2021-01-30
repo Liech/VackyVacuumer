@@ -45,4 +45,11 @@ public class Life : MonoBehaviour
       }
     }
   }
+
+  public int getLife() { return life; }
+
+  public void setLife(int new_life)
+  {
+      life = new_life;
+  }
 }

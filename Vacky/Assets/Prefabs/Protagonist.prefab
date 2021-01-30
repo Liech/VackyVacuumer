@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 5622031123256002915}
   - component: {fileID: 1603147680}
   - component: {fileID: 3399087673369565626}
+  - component: {fileID: 1280174244273117731}
   m_Layer: 0
   m_Name: Protagonist
   m_TagString: Untagged
@@ -208,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f188cd65a03505d469f5076b3a37b2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _bonkMesh: {fileID: 5845204273846962250, guid: 7538c94c89d7e7449a3ecb4756285082, type: 3}
+  _bonkMesh: {fileID: 0}
   _bonkers: []
   _bonkerCoords: []
   _maxMemory: 5
@@ -305,6 +306,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max_ammo: 100
   ammo: 0
+--- !u!114 &1280174244273117731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6504719881398948248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3f91b9846c3a94090c7b7d97fb2fe1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heal_points: 1
+  ammo_cost: 1
+  healing_time: 1
 --- !u!1001 &1884707947364885115
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 2
-  map: {fileID: 1018794200}
+  onDirtMap: 0
   changeTo: {fileID: 11400000, guid: 7b084389c544dd544a47174f37dc6e89, type: 2}
 --- !u!4 &232545755
 Transform:
@@ -169,11 +169,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1839735485 &1018794200 stripped
-Tilemap:
-  m_CorrespondingSourceObject: {fileID: 5358180169323753348, guid: 03ba6a974135f99408d35e3a69b868f0, type: 3}
-  m_PrefabInstance: {fileID: 5090721293042872752}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1126725634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -453,7 +448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3565487266218260435, guid: ac7def4bd110f9c46b08ec878d2241a7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -132.84856
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3565487266218260435, guid: ac7def4bd110f9c46b08ec878d2241a7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -486,6 +481,18 @@ PrefabInstance:
     - target: {fileID: 5184172837516396359, guid: ac7def4bd110f9c46b08ec878d2241a7, type: 3}
       propertyPath: m_Name
       value: HealingStation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511647648763043879, guid: ac7def4bd110f9c46b08ec878d2241a7, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6511647648763043879, guid: ac7def4bd110f9c46b08ec878d2241a7, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1621495897
+      objectReference: {fileID: 0}
+    - target: {fileID: 7650206310549439206, guid: ac7def4bd110f9c46b08ec878d2241a7, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac7def4bd110f9c46b08ec878d2241a7, type: 3}
