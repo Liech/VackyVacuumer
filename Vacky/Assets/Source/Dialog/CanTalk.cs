@@ -8,6 +8,8 @@ public class CanTalk : MonoBehaviour
   public List<string> titles;
   public List<string> textes;
   public List<Sprite> sprites;
+  public string QuestID = "TALK";
+  public List<Quest> QuestsOnDialogEnd;
   int currentPosition = 0;
 
   bool dialogActive = false;
@@ -31,6 +33,8 @@ public class CanTalk : MonoBehaviour
       Singleton.instance.blockInput = false;
       dialogActive = false;
       currentPosition = -1;
+      foreach (var quest in QuestsOnDialogEnd)
+        quest.GetComponent<Quest>().questDone(QuestID);
     }
     else
     {
