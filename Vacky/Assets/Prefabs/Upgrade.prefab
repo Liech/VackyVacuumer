@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971494888929392167}
   - component: {fileID: 9138037640489537564}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2401847869176004936}
   - component: {fileID: 7754313108560391670}
   - component: {fileID: 3090993690199355175}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 3264990091110281614}
   - component: {fileID: 3612932373633156279}
   - component: {fileID: 8746770605213959449}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

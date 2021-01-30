@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5203164827157408443}
   - component: {fileID: 4296151961339645056}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 7213421121393892820}
   - component: {fileID: 3374024138482905450}
   - component: {fileID: 8046597459070563259}
-  m_Layer: 0
-  m_Name: Upgrade
+  m_Layer: 2
+  m_Name: KnifeUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 7494474199020612882}
   - component: {fileID: 8605707610065311787}
   - component: {fileID: 4336102388539791749}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
