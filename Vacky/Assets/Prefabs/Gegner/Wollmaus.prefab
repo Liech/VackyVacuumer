@@ -50,7 +50,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 55098c822dff889449f55986c628d6e7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -170,6 +170,8 @@ MonoBehaviour:
   maxlife: 20
   lifebar: 0
   team: 0
+  vulnerability: 1
+  gotDamageSound: {fileID: 0}
 --- !u!114 &2647783339351329973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +187,8 @@ MonoBehaviour:
   Damage: 15
   Stun: 4
   On: 1
+  feuchteReinigung: 0
+  damageType: 1
 --- !u!114 &-3206755270161091147
 MonoBehaviour:
   m_ObjectHideFlags: 0
