@@ -311,6 +311,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PflanzenMedBay
       objectReference: {fileID: 0}
+    - target: {fileID: 5823816199884470569, guid: 4d66ec0e3ef52c94b894f3e50db04821, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5823816199884470569, guid: 4d66ec0e3ef52c94b894f3e50db04821, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.data[0]
+      value: 
+      objectReference: {fileID: 1937637189}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d66ec0e3ef52c94b894f3e50db04821, type: 3}
 --- !u!1001 &828444288
@@ -320,6 +328,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4907040000596581513, guid: e48edcd42f893ff4c93b67668ee85e30, type: 3}
+      propertyPath: quests.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907040000596581513, guid: e48edcd42f893ff4c93b67668ee85e30, type: 3}
+      propertyPath: quests.Array.data[0]
+      value: 
+      objectReference: {fileID: 1937637188}
     - target: {fileID: 5307815081089642267, guid: e48edcd42f893ff4c93b67668ee85e30, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1203,6 +1219,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd1e4e73956f9d140962edc0d310325b, type: 3}
+--- !u!1 &1937637188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2646478557490623107, guid: bd1e4e73956f9d140962edc0d310325b, type: 3}
+  m_PrefabInstance: {fileID: 1937637187}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1937637189 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4464999471746687411, guid: bd1e4e73956f9d140962edc0d310325b, type: 3}
+  m_PrefabInstance: {fileID: 1937637187}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e9be8a460e6b946b3e0c9aeea52e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1957876047
 PrefabInstance:
   m_ObjectHideFlags: 0
