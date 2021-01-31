@@ -641,7 +641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
       propertyPath: textes.Array.data[4]
-      value: I am not ready fpr a fourth! Go inside, Vacky and clean the mess up!
+      value: I am not ready for a fourth! Go inside, Vacky and clean the mess up!
       objectReference: {fileID: 0}
     - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
       propertyPath: titles.Array.data[3]
