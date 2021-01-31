@@ -18,6 +18,10 @@ public class Life : MonoBehaviour
   public int team;
   public DamageCategory vulnerability = DamageCategory.BonkDamage;
 
+  public bool  doesExplode = true;
+  public float explosionRadius = 4;
+
+
   public GameObject gotDamageSound;
 
   // Start is called before the first frame update
@@ -76,6 +80,10 @@ public class Life : MonoBehaviour
           GetComponent<DangerousThing>().On = false;
         transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(0.3f,0.3f,0.3f);
         Debug.Log("Death: " + gameObject.name);
+        if (doesExplode)
+        {
+
+        }
       }
     }
   }
