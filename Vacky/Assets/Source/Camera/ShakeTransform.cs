@@ -18,7 +18,7 @@ public class ShakeTransform : MonoBehaviour
 
 	private void Awake()
 	{
-		_startPos = transform.position;
+		_startPos = transform.localPosition;
 	}
 
 	private void OnValidate()
@@ -43,7 +43,7 @@ public class ShakeTransform : MonoBehaviour
 
 			_randomPos = _startPos + (Random.insideUnitSphere * _distance);
 
-			transform.position = _randomPos;
+			transform.localPosition = _randomPos;
 
 			if (_delayBetweenShakes > 0f)
 			{
@@ -55,7 +55,7 @@ public class ShakeTransform : MonoBehaviour
 			}
 		}
 
-		transform.position = _startPos;
+		transform.localPosition = _startPos;
 	}
 
 }

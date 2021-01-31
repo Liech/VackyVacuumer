@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class CanTalk : MonoBehaviour
 {
+  public GameObject soundOnClick;
   public List<string> titles;
   public List<string> textes;
   public List<Sprite> sprites;
@@ -46,6 +47,8 @@ public class CanTalk : MonoBehaviour
       text.text = titles[currentPosition];
       title.text = textes[currentPosition];
       avatar.sprite = sprites[currentPosition];
+      if (soundOnClick) 
+        Instantiate(soundOnClick);
     }
   }
 

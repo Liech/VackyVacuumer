@@ -11,7 +11,7 @@ public class Upgrade : MonoBehaviour
     if (!UpgraderObject)
       throw new System.Exception("No Upgrade Set");
     GameObject upgrader = Instantiate(UpgraderObject, target.transform);
-    
+    SoundSingleton.instance.playCollect();
     target.GetComponent<Upgradeable>().addUpgrade(upgrader.GetComponent<Upgrader>());
   }
 
