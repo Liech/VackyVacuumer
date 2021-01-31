@@ -19,12 +19,13 @@ public class FireWeapon : IController
       return;
 
     bool pressed = Input.GetKey(KeyCode.Space);
-    
-    if (pressed && !fired &&  GetComponent<Ammo>().getAmmo() > 0 && GetComponentInChildren<IFireable>())
+
+    int ammoNeeded = GetComponentInChildren<IFireable>().ammoNeeded;
+    if (pressed && !fired &&  GetComponent<Ammo>().getAmmo() >= ammoNeeded && GetComponentInChildren<IFireable>())
     {
       GetComponentInChildren<IFireable>().fire();
       fired = true;
-      GetComponent<Ammo>().decAmmo();
+      GetComponent<Ammo>().decAmmo(ammoNeeded);
     }
     else if (!pressed)
       fired = false;
