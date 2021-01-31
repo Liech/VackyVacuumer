@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 2805333164996681775}
   - component: {fileID: 3084227892413353460}
   - component: {fileID: 3368496680980348435}
+  - component: {fileID: 5247790625293275849}
   m_Layer: 0
   m_Name: Charger
   m_TagString: Untagged
@@ -255,6 +256,18 @@ MonoBehaviour:
   doesExplode: 1
   explosionRadius: 3
   gotDamageSound: {fileID: 6461853921599703517, guid: 02f1f838d93327243bb35ff03b29a8de, type: 3}
+--- !u!114 &5247790625293275849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050233537017156572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0a7aab711c42d458b66d4d9d58d10f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &662541045900017443
 PrefabInstance:
   m_ObjectHideFlags: 0

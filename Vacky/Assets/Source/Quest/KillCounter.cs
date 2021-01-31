@@ -7,7 +7,7 @@ public class KillCounter : MonoBehaviour
   public float extendX = 2;
   public float extendY = 2;
   public List<GameObject> quests;
-  string ID;
+  public string ID;
   
   void checkSuccess()
   {
