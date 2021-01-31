@@ -38,8 +38,6 @@ public class DirtCounter : MonoBehaviour
       foreach(var quest in quests) 
         quest.GetComponent<Quest>().questDone(ID);
       Destroy(gameObject);
-      SoundSingleton.instance.playCollect();
-
     }
     else
       Debug.Log("DIRT REMAINING: " + counter.ToString());

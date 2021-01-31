@@ -41,7 +41,7 @@ public class Healing : MonoBehaviour
           GetComponent<Life>().setLife(new_life);
           Debug.Log("new life: " + new_life);
           GetComponent<ParticleSystem>().startColor = new Color(0, 255, 0);
-          SoundSingleton.instance.playCollect();
+          SoundSingleton.instance.playHeal();
         }
         if (ammo < ammo_cost && life < GetComponent<Life>().maxlife)
         {

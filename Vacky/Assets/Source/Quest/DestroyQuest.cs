@@ -9,5 +9,6 @@ public class DestroyQuest : Quest
     Debug.Log("Now I will open");
     //Instantiate(toSpawn, transform.position, Quaternion.identity);
     Destroy(gameObject);
+    SoundSingleton.instance.playQuestComplete();
   }
 }

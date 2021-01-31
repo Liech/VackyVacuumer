@@ -75,6 +75,8 @@ MonoBehaviour:
   Bonk: {fileID: 6461853921599703517, guid: 68d9e4240c037af43a2e4dd8af4bfd54, type: 3}
   Collect: {fileID: 6461853921599703517, guid: 0df1d5e66c115ce4a92bab7e47ab0400, type: 3}
   EnemyDeath: {fileID: 6461853921599703517, guid: 78415edb11dff3345926d56de1a5a61a, type: 3}
+  QuestComplete: {fileID: 6781815301606127803, guid: fced27cd91c7c1744925452e26675fea, type: 3}
+  Heal: {fileID: 2884238024541565810, guid: 11023af2870ab6844baced9f5bf1c2cd, type: 3}
 --- !u!82 &5033549167422077831
 AudioSource:
   m_ObjectHideFlags: 0
