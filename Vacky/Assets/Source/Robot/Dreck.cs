@@ -27,10 +27,7 @@ public class Dreck : MonoBehaviour
   {
     if (collision.tag == "Dreck")
     {
-            if (Aufsaugesound) Instantiate(Aufsaugesound);
-      dirt_count += 1;
       //Debug.Log("Dreck Count: " + dirt_count);
-      GetComponent<Ammo>().incAmmo();
 
       float radius = GetComponent<CircleCollider2D>().radius;
       Vector3 pos = gameObject.transform.position;
@@ -41,9 +38,20 @@ public class Dreck : MonoBehaviour
         {
           float angle = 2f * Mathf.PI / (float)num_points * i;
           Vector3 contour_point = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0) + pos;
-          tilemap.SetTile(tilemap.WorldToCell(contour_point), null);
+          if (tilemap.GetTile(tilemap.WorldToCell(contour_point)) != null)
+          {
+            tilemap.SetTile(tilemap.WorldToCell(contour_point), null);
+            if (Aufsaugesound) Instantiate(Aufsaugesound);
+            dirt_count += 1;
+          }
         }
-        tilemap.SetTile(tilemap.WorldToCell(pos), null);
+        if (tilemap.GetTile(tilemap.WorldToCell(pos)))
+        {
+          tilemap.SetTile(tilemap.WorldToCell(pos), null);
+          if (Aufsaugesound) Instantiate(Aufsaugesound);
+          dirt_count += 1;
+          GetComponent<Ammo>().incAmmo();
+        }
       }
 
     }
