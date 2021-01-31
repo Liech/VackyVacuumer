@@ -5759,6 +5759,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: textes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: titles.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: textes.Array.data[0]
+      value: Huh who are you? Can you get rid of all the readioactive thrash?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: textes.Array.data[1]
+      value: We can't have the dirt mutate into even more monsters now!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: titles.Array.data[1]
+      value: Kerbandi
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
 --- !u!1 &9175837588935520912 stripped
