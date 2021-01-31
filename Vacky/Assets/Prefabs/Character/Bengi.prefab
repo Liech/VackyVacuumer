@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 126044644391922322}
   - component: {fileID: 8826390672163901880}
   m_Layer: 0
-  m_Name: RedShirt
+  m_Name: Bengi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,18 +50,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundOnClick: {fileID: 0}
   titles:
-  - Panicing Redshirt
-  - Panicing Redshirt
-  - Panicing Redshirt
+  - Bengi
+  - Bengi
+  - Bengi
   textes:
-  - OH NO, the explosion of the recycler engine 3000 radiated all the trash and mutated
-    it.
-  - The crew quarters are completly infested with aggresive trash entities.
-  - The computer blocked of access to the fron of the station.
+  - Hey vaccy, good job cleaning up these slimes.
+  - With this access card you can get into the reactor core to help out there.
+  - Drive back to the engineering department, the reactor core is through the door
+    to the right.
   sprites:
-  - {fileID: 21300000, guid: 3f44a9388d2baf3458362b6886078102, type: 3}
-  - {fileID: 21300000, guid: 3f44a9388d2baf3458362b6886078102, type: 3}
-  - {fileID: 21300000, guid: 3f44a9388d2baf3458362b6886078102, type: 3}
+  - {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
+  - {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
+  - {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
   QuestID: TALK
   QuestsOnDialogEnd: []
 --- !u!58 &3754926488310969269
@@ -179,7 +179,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3f44a9388d2baf3458362b6886078102, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
