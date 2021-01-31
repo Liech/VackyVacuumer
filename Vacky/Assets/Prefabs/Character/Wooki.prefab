@@ -111,9 +111,8 @@ MonoBehaviour:
   - Ill Wookie
   - Ill Wookie
   textes:
-  - GGrWWRGHH! My stomach hurts, go get my medicine from the storage. Take the upper
-    door!
-  - "Be carefull there are agressive Wollm\xE4use in there."
+  - GGrWWRGHH! My stomach hurts, go get my medicine from the storage.
+  - "Take the upper door! Be carefull there are agressive Wollm\xE4use in there."
   sprites:
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
