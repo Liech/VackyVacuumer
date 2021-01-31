@@ -7525,6 +7525,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zettel4
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
 --- !u!4 &492154009750183517 stripped
