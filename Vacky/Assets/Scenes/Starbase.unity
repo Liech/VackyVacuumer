@@ -329,6 +329,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4907040000596581513, guid: e48edcd42f893ff4c93b67668ee85e30, type: 3}
+      propertyPath: ID
+      value: LABOR
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907040000596581513, guid: e48edcd42f893ff4c93b67668ee85e30, type: 3}
       propertyPath: quests.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -393,6 +397,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3841486157193889338, guid: b250c1261cc736146bf9a8ebdf2a092c, type: 3}
+      propertyPath: ID
+      value: REDSHIRT
+      objectReference: {fileID: 0}
     - target: {fileID: 5307815081089642267, guid: b250c1261cc736146bf9a8ebdf2a092c, type: 3}
       propertyPath: m_RootOrder
       value: 9
