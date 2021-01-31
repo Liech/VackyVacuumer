@@ -15,7 +15,7 @@ public class Ammo : MonoBehaviour
   // Update is called once per frame
   private void FixedUpdate()
   {
-
+    if(Singleton.instance.dreckbar)
     Singleton.instance.dreckbar.setAmmo((float)ammo / (float)max_ammo);
   }
 

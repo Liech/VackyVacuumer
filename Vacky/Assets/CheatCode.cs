@@ -21,12 +21,29 @@ public class CheatCode : MonoBehaviour
       return;
     if (third)
     {
-      if (Input.GetKey(KeyCode.K)&&!pressed)
+      if (Input.GetKey(KeyCode.L) && !pressed)
       {
         pressed = true;
         current++;
         if (current >= Singleton.instance.cheats.Count)
           current = 0;
+        if (current < 0)
+          current = Singleton.instance.cheats.Count - 1;
+        GameObject cheat = Singleton.instance.cheats[current];
+        //Destroy(Singleton.instance.protagonist);
+        //var prota = Instantiate(Singleton.instance.roboPrefab,cheat.transform.position,Quaternion.identity);
+        Singleton.instance.protagonist.transform.position = cheat.transform.position;
+        foreach (var comp in cheat.GetComponents<Upgrade>())
+          comp.doUpgrade(Singleton.instance.protagonist);
+      }
+      if (Input.GetKey(KeyCode.K)&&!pressed)
+      {
+        pressed = true;
+        current--;
+        if (current >= Singleton.instance.cheats.Count)
+          current = 0;
+        if (current < 0)
+          current = Singleton.instance.cheats.Count - 1;
         GameObject cheat = Singleton.instance.cheats[current];
         //Destroy(Singleton.instance.protagonist);
         //var prota = Instantiate(Singleton.instance.roboPrefab,cheat.transform.position,Quaternion.identity);
