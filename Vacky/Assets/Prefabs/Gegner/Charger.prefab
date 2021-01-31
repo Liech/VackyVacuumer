@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 5564559501187982704}
   - component: {fileID: 8213849775301484309}
   - component: {fileID: 2805333164996681775}
+  - component: {fileID: 3429029757931008345}
   m_Layer: 0
   m_Name: Charger
   m_TagString: Untagged
@@ -180,6 +181,8 @@ MonoBehaviour:
   Damage: 20
   Stun: 2
   On: 1
+  feuchteReinigung: 0
+  damageType: 1
 --- !u!50 &2805333164996681775
 Rigidbody2D:
   serializedVersion: 4
@@ -201,3 +204,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3429029757931008345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050233537017156572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f38214c9e06bc04ea3fdb8e893c7b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 20
+  maxlife: 20
+  lifebar: 0
+  team: 0
+  vulnerability: 1
+  gotDamageSound: {fileID: 0}
