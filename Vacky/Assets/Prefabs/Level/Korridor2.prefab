@@ -3199,6 +3199,11 @@ MonoBehaviour:
   soundOnClick: {fileID: 0}
   titles:
   - Inkitty
+  - Inkitty
+  - Inkitty
+  - Inkitty
+  - Inkitty
+  - Inkitty
   textes:
   - Vacky! Over here...
   - The slime monsters have taken over the kitchen!
@@ -3207,6 +3212,10 @@ MonoBehaviour:
   - Here is a mop to mop up the slime.
   - And ask Bobby if they've seen Bunny somewhere!
   sprites:
+  - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
+  - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
+  - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
+  - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
   - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
   - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
   QuestID: MOP
