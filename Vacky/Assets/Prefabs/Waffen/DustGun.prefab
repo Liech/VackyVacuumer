@@ -130,4 +130,3 @@ MonoBehaviour:
   StartVelocity: 5
   Bullet: {fileID: 6402330969068998087, guid: 82842108becb4f94fbc17cd852256f54, type: 3}
   spawnDistance: 1
-  FireSound: {fileID: 6461853921599703517, guid: aecb45ff2728230498faddc0f5a3dbd4, type: 3}

@@ -104,8 +104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35746601a02683c40a9f52684a70d21c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: 1
-  explosionRadius: 0.3
 --- !u!198 &6326371234192602940
 ParticleSystem:
   m_ObjectHideFlags: 0

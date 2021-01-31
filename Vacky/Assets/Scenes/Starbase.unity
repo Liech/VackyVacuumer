@@ -187,6 +187,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4855882901174307436, guid: d371caa4b93b1274da07f01936a1eab3, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4855882901174307436, guid: d371caa4b93b1274da07f01936a1eab3, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.data[0]
+      value: 
+      objectReference: {fileID: 3810542536531644992}
     - target: {fileID: 5307815081089642267, guid: d371caa4b93b1274da07f01936a1eab3, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1564,6 +1572,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3873251439637781815, guid: a61f09387dc21f9429224d40346d1b23, type: 3}
   m_PrefabInstance: {fileID: 3810542536531644990}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3810542536531644992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2312602419641886799, guid: a61f09387dc21f9429224d40346d1b23, type: 3}
+  m_PrefabInstance: {fileID: 3810542536531644990}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e9be8a460e6b946b3e0c9aeea52e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5090721293042872752
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -7,7 +7,6 @@ public class Charge : IController
   public float speed = 10;
   public float rotationSpeed = 30;
   public float angleTolerance = 5;
-  public GameObject SoundOnCharge;
 
   GameObject target;
   bool charge = false;
@@ -27,10 +26,7 @@ public class Charge : IController
         delta = rotationSpeed;
       transform.GetComponent<Rigidbody2D>().angularVelocity = delta;
       if (Mathf.Abs(delta) < angleTolerance)
-      {
         charge = true;
-        if (SoundOnCharge) Instantiate(SoundOnCharge);
-      }
       Debug.Log(delta);
     }
     if (charge)

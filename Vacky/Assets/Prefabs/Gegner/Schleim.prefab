@@ -129,7 +129,6 @@ MonoBehaviour:
   bulletSpeed: 4
   reshotTime: 0.5
   bulletsInMagazine: 8
-  FireSound: {fileID: 6461853921599703517, guid: 5b99fefa1ff103f43932a9d3c6d29050, type: 3}
 --- !u!58 &5691845435112792920
 CircleCollider2D:
   m_ObjectHideFlags: 0

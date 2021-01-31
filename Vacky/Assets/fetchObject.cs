@@ -28,7 +28,7 @@ public class fetchObject : MonoBehaviour
         Debug.Log("Medizin geschnappt!");
         Destroy(door);
         wuukie.GetComponent<NextDialogQuest>().questDone("MEDIZIN");
-        SoundSingleton.instance.playCollect();
+
         Destroy(gameObject); // destroy self
     }
 }
