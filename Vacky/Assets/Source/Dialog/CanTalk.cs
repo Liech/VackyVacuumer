@@ -36,6 +36,7 @@ public class CanTalk : MonoBehaviour
       currentPosition = -1;
       foreach (var quest in QuestsOnDialogEnd)
         quest.GetComponent<Quest>().questDone(QuestID);
+      QuestsOnDialogEnd.Clear();
     }
     else
     {
