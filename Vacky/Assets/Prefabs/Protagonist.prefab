@@ -294,6 +294,7 @@ MonoBehaviour:
   Speed: 4
   RotationSpeed: 110
   BackwardsDrive: 1
+  multiplier: 1
 --- !u!50 &5809203958186350547
 Rigidbody2D:
   serializedVersion: 4
@@ -459,7 +460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heal_points: 5
-  ammo_cost: 5
+  ammo_cost: 15
   healing_time: 1
   nopeSound: {fileID: 6461853921599703517, guid: 69107adbad5e2024a9e4f02452972f19, type: 3}
 --- !u!114 &5187539570664192884

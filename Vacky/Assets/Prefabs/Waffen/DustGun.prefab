@@ -126,7 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe1779c2996e8140b6cf6546165fe5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoNeeded: 10
+  ammoNeeded: 15
+  coolDownTime: 0.5
   StartVelocity: 5
   Bullet: {fileID: 6402330969068998087, guid: 82842108becb4f94fbc17cd852256f54, type: 3}
   spawnDistance: 1

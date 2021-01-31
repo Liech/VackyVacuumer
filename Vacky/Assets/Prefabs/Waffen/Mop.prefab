@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f272d2ed6b1b347830a0a5b5ab1fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoNeeded: 15
+  ammoNeeded: 10
   coolDownTime: 2
   rotateSpeed: 700
   stunDuration: 0.5
