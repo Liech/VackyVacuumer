@@ -17,6 +17,7 @@ public class Upgradeable : IController
     
     if ((forward||backwards) && currentUpgrader && !pressed)
     {
+      SoundSingleton.instance.playClick();
       pressed = true;
       int currentID = 0;
       for (int i = 0; i < upgrader.Count; i++)

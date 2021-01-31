@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 15
-  Stun: 4
+  Stun: 1
   On: 1
   feuchteReinigung: 0
   damageType: 1

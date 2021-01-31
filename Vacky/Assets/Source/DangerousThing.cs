@@ -5,7 +5,7 @@ using UnityEngine;
 public class DangerousThing : MonoBehaviour
 {
   public int Damage = 15;
-  public int Stun   = 4;
+  public float Stun = 1;
   public bool On = true;
   public bool feuchteReinigung = false;
   public DamageCategory damageType = DamageCategory.BonkDamage;

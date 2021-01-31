@@ -11,6 +11,7 @@ public class Healing : MonoBehaviour
     public float healing_time = 1;  // time between two ticks in seconds
     private float time_counter = 0;        // count how long contact persists to healing station
     private bool in_heal_zone = false;
+  public GameObject nopeSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,27 +24,34 @@ public class Healing : MonoBehaviour
         
     }
 
-    private void FixedUpdate()
+  private void FixedUpdate()
+  {
+    if (in_heal_zone)
     {
-        if (in_heal_zone)
+      if (time_counter >= healing_time)
+      {
+        int ammo = GetComponent<Ammo>().getAmmo();
+        int life = GetComponent<Life>().getLife();
+        Debug.Log("oldlife: " + life);
+        GetComponent<ParticleSystem>().startColor = new Color(255, 0, 0);
+        if (ammo >= ammo_cost && life < GetComponent<Life>().maxlife)
         {
-            if (time_counter >= healing_time)
-            {
-                int ammo = GetComponent<Ammo>().getAmmo();
-                int life = GetComponent<Life>().getLife();
-                Debug.Log("oldlife: " + life);
-                if (ammo >= ammo_cost && life < GetComponent<Life>().maxlife)
-                {
-                    GetComponent<Ammo>().setAmmo(ammo - ammo_cost);
-                    int new_life = Mathf.Min(life + heal_points, GetComponent<Life>().maxlife);
-                    GetComponent<Life>().setLife(new_life);
-                    Debug.Log("new life: " + new_life);
-                }
-                time_counter = 0;
-            }
-            time_counter += Time.deltaTime;
+          GetComponent<Ammo>().setAmmo(ammo - ammo_cost);
+          int new_life = Mathf.Min(life + heal_points, GetComponent<Life>().maxlife);
+          GetComponent<Life>().setLife(new_life);
+          Debug.Log("new life: " + new_life);
+          GetComponent<ParticleSystem>().startColor = new Color(0, 255, 0);
+          SoundSingleton.instance.playCollect();
         }
+        if (ammo < ammo_cost && life < GetComponent<Life>().maxlife)
+        {
+          if (nopeSound) Instantiate(nopeSound);
+        }
+        time_counter = 0;
+      }
+      time_counter += Time.deltaTime;
     }
+  }
 
     //private void OnTriggerStay2D(Collider2D collision)
     //{
@@ -73,13 +81,16 @@ public class Healing : MonoBehaviour
     {
         if (collision.tag == "HealingStation")
         {
-            in_heal_zone = true;
-        }
-    }
+            in_heal_zone = true; 
+      GetComponent<ParticleSystem>().enableEmission = true;
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        time_counter = 0;   // resetting time counter when leaving healing station
-        in_heal_zone = false;
     }
+  }
+
+  private void OnTriggerExit2D(Collider2D collision)
+  {
+    time_counter = 0;   // resetting time counter when leaving healing station
+    in_heal_zone = false;
+    GetComponent<ParticleSystem>().enableEmission = false;
+  }
 }

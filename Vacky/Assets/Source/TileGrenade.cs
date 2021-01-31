@@ -17,8 +17,14 @@ public class TileGrenade : MonoBehaviour
   private IEnumerator explode()
   {
     yield return new WaitForSeconds(0.1f);
+    explode(transform.position, radius, changeTo, onDirtMap);
+    Destroy(gameObject);
+  }
+
+  public static void explode(Vector3 position, float r, TileBase newTile, bool onDirt)
+  {
     HashSet<Tilemap> maps;
-    if (onDirtMap)
+    if (onDirt)
       maps = Singleton.instance.DirtTileMaps;
     else
       maps = Singleton.instance.ShipTileMaps;
@@ -28,17 +34,20 @@ public class TileGrenade : MonoBehaviour
       if (map == null)
         throw new System.Exception("No Tilemap for tilegrenade");
 
-      Vector3Int from = map.WorldToCell(transform.position - new Vector3(radius, radius, 0));
-      Vector3Int to = map.WorldToCell(transform.position + new Vector3(radius, radius, 0));
-      Vector3Int center = map.WorldToCell(transform.position);
+      Vector3Int from = map.WorldToCell  (position - new Vector3(r, r, 0));
+      Vector3Int to = map.WorldToCell    (position + new Vector3(r, r, 0));
+      Vector3Int center = map.WorldToCell(position);
 
       for (int x = from[0]; x < to[0]; x++)
         for (int y = from[1]; y < to[1]; y++)
-          if ((new Vector2(x + 0.5f, y + 0.5f) - new Vector2(center.x, center.y)).magnitude < radius / map.transform.localScale[0])
-            map.SetTile(new Vector3Int(x, y, 0), changeTo);
+        {
+          Vector2 pos = new Vector2(map.transform.position.x, map.transform.position.y) + new Vector2(map.transform.localScale[0] * x, map.transform.localScale[0] * y);
+          if (Physics2D.OverlapPoint(pos))
+            continue;
+          if ((new Vector2(x + 0.5f, y + 0.5f) - new Vector2(center.x, center.y)).magnitude < r / map.transform.localScale[0])
+            map.SetTile(new Vector3Int(x, y, 0), newTile);
+        }
     }
-
-    Destroy(gameObject);
   }
 
   // Update is called once per frame

@@ -9,7 +9,12 @@ public class SoundSingleton : MonoBehaviour
   public GameObject Click;
   public GameObject Bonk;
   public GameObject Collect;
+  public GameObject EnemyDeath;
 
+  public void playEnemyDeath()
+  {
+    if (EnemyDeath) Instantiate(EnemyDeath);
+  }
   public void playCollect()
   {
     if (Collect) Instantiate(Collect);

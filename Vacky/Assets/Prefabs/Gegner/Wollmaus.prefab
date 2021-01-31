@@ -188,7 +188,9 @@ MonoBehaviour:
   lifebar: 0
   team: 0
   vulnerability: 1
-  gotDamageSound: {fileID: 0}
+  doesExplode: 1
+  explosionRadius: 2
+  gotDamageSound: {fileID: 6461853921599703517, guid: 02f1f838d93327243bb35ff03b29a8de, type: 3}
 --- !u!114 &2647783339351329973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,8 +203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a2c4dbf073f0e4eb4438c80a07023a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 15
-  Stun: 4
+  Damage: 5
+  Stun: 0.5
   On: 1
   feuchteReinigung: 0
   damageType: 1
