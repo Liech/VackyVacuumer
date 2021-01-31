@@ -50,7 +50,7 @@ public class Life : MonoBehaviour
     life -= dmg;
 
 
-    if (transform.childCount > 0)
+    if (transform.childCount > 0 && alive)
     {
       if (transform.GetChild(0).GetComponent<ShakeTransform>())
       {
