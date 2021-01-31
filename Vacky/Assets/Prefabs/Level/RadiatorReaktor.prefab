@@ -5654,6 +5654,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
 --- !u!4 &3819839219775029603 stripped
@@ -5715,6 +5723,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
@@ -5778,6 +5794,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &3966202806709839262 stripped
@@ -5839,6 +5863,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
@@ -5964,6 +5996,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
 --- !u!4 &4309637143353259732 stripped
@@ -6088,6 +6128,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &2388221367390664169 stripped
@@ -6211,6 +6259,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 9329d9d268a7fe14483eed75e45fff93, type: 3}
       propertyPath: m_Name
       value: Buch4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 9329d9d268a7fe14483eed75e45fff93, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 9329d9d268a7fe14483eed75e45fff93, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9329d9d268a7fe14483eed75e45fff93, type: 3}
@@ -6475,6 +6531,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse3 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
 --- !u!4 &1225561480507144186 stripped
@@ -6536,6 +6600,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
@@ -6661,6 +6733,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
 --- !u!4 &1653719929785618332 stripped
@@ -6722,6 +6802,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
@@ -6846,6 +6934,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse2 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
@@ -7095,6 +7191,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
 --- !u!4 &130028174344720828 stripped
@@ -7219,6 +7323,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &22162773307018425 stripped
@@ -7342,6 +7454,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
@@ -7529,6 +7649,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &762416840136863420 stripped
@@ -7714,6 +7842,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
@@ -7901,6 +8037,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buch5
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e79ab04c612fa3a4382d417d7ab12f9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e79ab04c612fa3a4382d417d7ab12f9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e79ab04c612fa3a4382d417d7ab12f9b, type: 3}
 --- !u!4 &8776724817896455015 stripped
@@ -8087,6 +8231,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
 --- !u!4 &9038129229420498128 stripped
@@ -8211,6 +8363,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &8990945846221250191 stripped
@@ -8272,6 +8432,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
@@ -8521,6 +8689,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &7298455915104594171 stripped
@@ -8582,6 +8758,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
@@ -8645,6 +8829,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
 --- !u!4 &7272011696028767120 stripped
@@ -8707,6 +8899,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &7365395226237593706 stripped
@@ -8768,6 +8968,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
       propertyPath: m_Name
       value: Zettel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
@@ -9327,6 +9535,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d71b9d5325da75844955c7897035d3e5, type: 3}
 --- !u!4 &6400974389283763931 stripped
@@ -9388,6 +9604,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 28f2d383f46ffdb4e91085e23c0f1cda, type: 3}
       propertyPath: m_Name
       value: Buch2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 28f2d383f46ffdb4e91085e23c0f1cda, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 28f2d383f46ffdb4e91085e23c0f1cda, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f2d383f46ffdb4e91085e23c0f1cda, type: 3}
@@ -9451,6 +9675,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &6641593183939095692 stripped
@@ -9512,6 +9744,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
@@ -9699,6 +9939,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kaffeetasse2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
 --- !u!4 &4959957970211405187 stripped
@@ -9760,6 +10008,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
       propertyPath: m_Name
       value: Zettel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
@@ -9909,6 +10165,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
