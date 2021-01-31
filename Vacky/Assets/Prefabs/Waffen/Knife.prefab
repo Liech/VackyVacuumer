@@ -131,6 +131,7 @@ MonoBehaviour:
   On: 1
   feuchteReinigung: 0
   damageType: 1
+  specialSound: {fileID: 6461853921599703517, guid: 76bfd9d7526a01f41958ab6afe223688, type: 3}
 --- !u!61 &3442341807841374355
 BoxCollider2D:
   m_ObjectHideFlags: 0

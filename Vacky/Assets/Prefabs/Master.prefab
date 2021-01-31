@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8764442945459004342}
   - component: {fileID: 5457619464081767243}
   - component: {fileID: 5033549167422077831}
+  - component: {fileID: 5253169348878662203}
   m_Layer: 0
   m_Name: Master
   m_TagString: Untagged
@@ -56,6 +57,8 @@ MonoBehaviour:
   cam: {fileID: 0}
   Screenshake: 0
   explosionDreck: {fileID: 11400000, guid: 34fc6eeaed4d58f44a6571f44c882ab2, type: 2}
+  cheats: []
+  roboPrefab: {fileID: 3104076398069713990}
 --- !u!114 &5457619464081767243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +171,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5253169348878662203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3413394046721323220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61d18316c2c2ea349906ec3d08596b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2204480054986085548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -586,6 +601,11 @@ PrefabInstance:
       objectReference: {fileID: 4363621628618242804}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
+--- !u!1 &3104076398069713990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6504719881398948248, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
+  m_PrefabInstance: {fileID: 8166870338025168350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3104076398069713988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6504719881398948250, guid: 8706198a0aa0bce4f99fbf16d889704c, type: 3}
