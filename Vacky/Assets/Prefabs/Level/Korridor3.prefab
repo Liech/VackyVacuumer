@@ -5021,6 +5021,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4055725349436621634, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: textes.Array.data[0]
+      value: Hey great you got it!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055725349436621634, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: textes.Array.data[1]
+      value: Lets get in here, and help Pinku!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4055725349436621634, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
       propertyPath: QuestsOnDialogEnd.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -5028,6 +5036,42 @@ PrefabInstance:
       propertyPath: QuestsOnDialogEnd.Array.data[0]
       value: 
       objectReference: {fileID: 2863192502614674652}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: textes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: titles.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: textes.Array.data[2]
+      value: You met Kerbandi? Is he alright?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: textes.Array.data[3]
+      value: Oh thank you alot, Vacky!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: titles.Array.data[2]
+      value: Cthyla
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: titles.Array.data[3]
+      value: Cthyla
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: fa134eaa52f69554a94482ca96bf25b5, type: 3}
+    - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: fa134eaa52f69554a94482ca96bf25b5, type: 3}
     - target: {fileID: 7034721720649056002, guid: 5044d0b3fc1cfdd488c2a0e46017a486, type: 3}
       propertyPath: QuestsOnDialogEnd.Array.size
       value: 1

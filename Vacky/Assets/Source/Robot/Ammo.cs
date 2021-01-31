@@ -40,7 +40,7 @@ public class Ammo : MonoBehaviour
   public void decAmmo( int amount)
   {
     ammo -= amount;
-    if (ammo > 0) ammo = 0;
+    if (ammo < 0) ammo = 0;
     Singleton.instance.dreckbar.setAmmo((float)ammo / (float)max_ammo);
   }
 }

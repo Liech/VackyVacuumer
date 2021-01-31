@@ -5,11 +5,18 @@ using UnityEngine;
 [RequireComponent(typeof(Ammo))]
 public class FireWeapon : IController
 {
-  bool fired = false;
+  bool onCoolDown = false;
   // Start is called before the first frame update
   void Start()
   {
 
+  }
+
+  IEnumerator CoolDown(float seconds)
+  {
+    yield return new WaitForSeconds(seconds);
+
+    onCoolDown = false;
   }
 
   // Update is called once per frame
@@ -19,16 +26,26 @@ public class FireWeapon : IController
       return;
 
     bool pressed = Input.GetKey(KeyCode.Space);
-    int ammoNeeded = 123123123;
-    if (GetComponentInChildren<IFireable>())
-       ammoNeeded = GetComponentInChildren<IFireable>().ammoNeeded;
-    if (pressed && !fired &&  GetComponent<Ammo>().getAmmo() >= ammoNeeded && GetComponentInChildren<IFireable>())
+    if (!pressed) return;
+
+    IFireable Weapon = GetComponentInChildren<IFireable>();
+
+    if (!Weapon)  return;
+
+    if (!onCoolDown)
     {
-      GetComponentInChildren<IFireable>().fire();
-      fired = true;
-      GetComponent<Ammo>().decAmmo(ammoNeeded);
+      onCoolDown = true;
+      StartCoroutine(CoolDown(Weapon.coolDownTime));
+
+      if (GetComponent<Ammo>().getAmmo() >= Weapon.ammoNeeded)
+      {
+        Debug.Log("Firing!");
+        GetComponentInChildren<IFireable>().fire();
+        GetComponent<Ammo>().decAmmo(Weapon.ammoNeeded);
+      } else {
+        Debug.Log("Ammo too low");
+        SoundSingleton.instance.playClick();
+      }
     }
-    else if (!pressed)
-      fired = false;
   }
 }
