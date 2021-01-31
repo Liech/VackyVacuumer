@@ -25,6 +25,7 @@ public class Turret : IController
     Vector2 dir = target.transform.position - transform.position;
     dir.Normalize();
 
+    RaycastHit2D hit = Physics2D.Raycast(transform.position, dir);
     GameObject shell = Instantiate(bullet, transform.position + new Vector3(dir.x,dir.y,0)*spawnDistance, Quaternion.identity);
 
     shell.GetComponent<Rigidbody2D>().velocity = dir * bulletSpeed;
@@ -55,5 +56,11 @@ public class Turret : IController
   {
     yield return new WaitForSeconds(seconds);
     canFire = true;
+  }
+
+  private void OnDrawGizmos()
+  {
+    Gizmos.color = new Color(0.5f, 0.0f, 0.0f, 0.3f);
+    Gizmos.DrawSphere(transform.position, spawnDistance);
   }
 }

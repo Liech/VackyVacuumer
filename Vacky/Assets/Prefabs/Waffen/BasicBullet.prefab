@@ -72,9 +72,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.003682822, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.12803236
 --- !u!114 &7027867435053592620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,6 +92,7 @@ MonoBehaviour:
   On: 1
   feuchteReinigung: 0
   damageType: 1
+  specialSound: {fileID: 0}
 --- !u!114 &6974309192019011877
 MonoBehaviour:
   m_ObjectHideFlags: 0

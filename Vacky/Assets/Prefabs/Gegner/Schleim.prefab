@@ -73,7 +73,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.48
 --- !u!50 &5256884529134849953
 Rigidbody2D:
   serializedVersion: 4
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 6402330969068998087, guid: 82842108becb4f94fbc17cd852256f54, type: 3}
   reloadTime: 4
-  spawnDistance: 1.05
+  spawnDistance: 0.63
   bulletSpeed: 2
   reshotTime: 1
   bulletsInMagazine: 3
