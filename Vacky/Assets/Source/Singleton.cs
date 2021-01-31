@@ -19,6 +19,8 @@ public class Singleton : MonoBehaviour
   public GameObject cam;
   public float Screenshake = 0;
   public TileBase explosionDreck;
+  public List<GameObject> cheats;
+  public GameObject roboPrefab;
 
   // Start is called before the first frame update
   public Singleton() 
