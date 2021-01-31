@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2965365204864091058}
   - component: {fileID: -5438516107907653472}
   m_Layer: 0
-  m_Name: EnemyDeath
+  m_Name: EnemyGotDamage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - {fileID: 8300000, guid: d2dc282ffa665ee4d938776c5256cd68, type: 3}
+  - {fileID: 8300000, guid: a335a351fe7394c48a63b080a9fe04e5, type: 3}
 --- !u!82 &-5438516107907653472
 AudioSource:
   m_ObjectHideFlags: 0
@@ -58,8 +58,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.532
+  m_Pitch: 1.58
   Loop: 0
   Mute: 0
   Spatialize: 0

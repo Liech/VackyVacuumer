@@ -54,6 +54,7 @@ MonoBehaviour:
   Glitch: 0
   cam: {fileID: 0}
   Screenshake: 0
+  explosionDreck: {fileID: 11400000, guid: 34fc6eeaed4d58f44a6571f44c882ab2, type: 2}
 --- !u!114 &5457619464081767243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,6 +70,7 @@ MonoBehaviour:
   Click: {fileID: 6461853921599703517, guid: 9f4a5860f95410c4d8f6f39ec34fc314, type: 3}
   Bonk: {fileID: 6461853921599703517, guid: 68d9e4240c037af43a2e4dd8af4bfd54, type: 3}
   Collect: {fileID: 6461853921599703517, guid: 0df1d5e66c115ce4a92bab7e47ab0400, type: 3}
+  EnemyDeath: {fileID: 6461853921599703517, guid: 78415edb11dff3345926d56de1a5a61a, type: 3}
 --- !u!1001 &2204480054986085548
 PrefabInstance:
   m_ObjectHideFlags: 0

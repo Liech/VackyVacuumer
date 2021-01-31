@@ -82,7 +82,9 @@ public class Life : MonoBehaviour
         Debug.Log("Death: " + gameObject.name);
         if (doesExplode)
         {
-
+          SoundSingleton.instance.playEnemyDeath();
+          Destroy(gameObject);
+          TileGrenade.explode(transform.position, explosionRadius, Singleton.instance.explosionDreck, true);
         }
       }
     }

@@ -18,6 +18,7 @@ public class Singleton : MonoBehaviour
   public bool Glitch = false;
   public GameObject cam;
   public float Screenshake = 0;
+  public TileBase explosionDreck;
 
   // Start is called before the first frame update
   public Singleton() 
