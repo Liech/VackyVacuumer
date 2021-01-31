@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749903923508512967}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7096937, w: 0.7045104}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.077, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 274965517191339872}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90.42}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7412752508359285257
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 1621495897
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 026994e3fd1998c49a2d416a3e676cbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ff4304622cdf64b4cbfa7d32e4d6e647, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -114,8 +114,10 @@ GameObject:
   - component: {fileID: 2805333164996681775}
   - component: {fileID: 3084227892413353460}
   - component: {fileID: 3368496680980348435}
+  - component: {fileID: 8155359383945877713}
+  - component: {fileID: 3435890044192345324}
   m_Layer: 0
-  m_Name: Charger
+  m_Name: BFT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,8 +151,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0025224686, y: -0.013453364}
-  m_Size: {x: 0.27970314, y: 0.8486507}
+  m_Offset: {x: -0.005215168, y: 0.11115539}
+  m_Size: {x: 1.5553653, y: 1.6573658}
   m_Direction: 0
 --- !u!58 &4451741578850132120
 CircleCollider2D:
@@ -253,3 +255,34 @@ MonoBehaviour:
   doesExplode: 1
   explosionRadius: 3
   gotDamageSound: {fileID: 6461853921599703517, guid: 02f1f838d93327243bb35ff03b29a8de, type: 3}
+--- !u!114 &8155359383945877713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050233537017156572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77f51c9db2d6be4badb4dca7bc0d41c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _attackDuration: 5
+--- !u!114 &3435890044192345324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050233537017156572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455e6a5dd49b09642a5d0e455baa57ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 6402330969068998087, guid: 51259892ac2e89743a15a2cf9ec2f5b3, type: 3}
+  reloadTime: 3
+  spawnDistance: 1
+  bulletSpeed: 2
+  reshotTime: 3
+  bulletsInMagazine: 3

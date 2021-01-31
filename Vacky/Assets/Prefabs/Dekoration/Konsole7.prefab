@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5299650838493170310}
   - component: {fileID: 6498631534086231285}
   m_Layer: 0
-  m_Name: Konsole2
+  m_Name: Konsole7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 253602879
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f160f1d32b8dd7442bece09cdc8c7c66, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2f5cd2f308d145438f5811b6dfaf0dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.5010539, y: -0.7730181}
+  m_Offset: {x: 0.0020428896, y: -0.5392946}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9959929, y: 0.45290136}
+  m_Size: {x: 2.0008368, y: 0.9403639}
   m_EdgeRadius: 0
 --- !u!50 &6498631534086231285
 Rigidbody2D:
