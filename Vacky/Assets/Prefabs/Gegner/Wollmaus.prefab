@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9113905086108213115}
   - component: {fileID: 7042239271332817616}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 2647783339351329973}
   - component: {fileID: -3206755270161091147}
   - component: {fileID: 6003166634302924121}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Wollmaus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,6 +170,8 @@ MonoBehaviour:
   maxlife: 20
   lifebar: 0
   team: 0
+  vulnerability: 1
+  gotDamageSound: {fileID: 0}
 --- !u!114 &2647783339351329973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +187,8 @@ MonoBehaviour:
   Damage: 15
   Stun: 4
   On: 1
+  feuchteReinigung: 0
+  damageType: 1
 --- !u!114 &-3206755270161091147
 MonoBehaviour:
   m_ObjectHideFlags: 0
