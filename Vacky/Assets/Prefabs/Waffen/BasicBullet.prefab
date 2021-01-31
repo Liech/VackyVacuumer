@@ -87,9 +87,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a2c4dbf073f0e4eb4438c80a07023a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 15
-  Stun: 4
+  Damage: 10
+  Stun: 0
   On: 1
+  feuchteReinigung: 0
+  damageType: 1
 --- !u!114 &6974309192019011877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4886,7 +4888,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728048806aaa41e49ab0e61ce8af6e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vel: {x: 0, y: 0}
 --- !u!1 &8006929754348645289
 GameObject:
   m_ObjectHideFlags: 0
@@ -4956,7 +4957,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1621495897
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7b3be31c3dccbf44c8eb902484a9c79d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
