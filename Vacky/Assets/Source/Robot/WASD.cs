@@ -8,6 +8,8 @@ public class WASD : IController , IStunnable
   public float RotationSpeed = 1.0f;
   public float BackwardsDrive = 1.0f;
 
+  public float multiplier = 1.0f;
+
   private bool _isStunned = false;
   private bool _inMenue = false;
 
@@ -28,8 +30,8 @@ public class WASD : IController , IStunnable
     bool s = Input.GetKey(KeyCode.S);
     bool d = Input.GetKey(KeyCode.D);
 
-    float xSpeed = -((a ? -1.0f : 0) * BackwardsDrive + (d ? 1.0f : 0)) * RotationSpeed;
-    float ySpeed = (s ? -1.0f : 0) + (w ? 1.0f : 0)*Speed;
+    float xSpeed = -((a ? -1.0f : 0) + (d ? 1.0f : 0)) * RotationSpeed * multiplier;
+    float ySpeed = (s ? -1.0f : 0)* BackwardsDrive * multiplier + (w ? 1.0f : 0) * Speed * multiplier;
 
     transform.GetComponent<Rigidbody2D>().angularVelocity = xSpeed;
     float angle = Mathf.PI * transform.GetComponent<Rigidbody2D>().rotation / 180.0f;

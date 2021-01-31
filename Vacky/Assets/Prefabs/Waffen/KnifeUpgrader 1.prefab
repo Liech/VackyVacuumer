@@ -43,4 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1cb582ee9e7974daaf524ec4a2b7be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpeedMultiplier: 1.5
   AttachOnUpgrade: {fileID: 8691580229742346704, guid: 2c83286b62458004c9c663d90d07c7ba, type: 3}

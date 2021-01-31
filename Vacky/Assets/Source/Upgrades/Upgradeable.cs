@@ -51,6 +51,10 @@ public class Upgradeable : IController
     }
     currentUpgrader = u;
     u.addUpgrade(this);
+
+    if (GetComponent<WASD>())
+      GetComponent<WASD>().multiplier = u.SpeedMultiplier;
+
   }
   public void addUpgrade(Upgrader u)
   {

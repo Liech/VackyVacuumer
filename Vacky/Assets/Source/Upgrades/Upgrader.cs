@@ -6,4 +6,6 @@ public class Upgrader : MonoBehaviour
 {
   public virtual void addUpgrade(Upgradeable target) { }
   public virtual void uninstall() { }
+
+  public float SpeedMultiplier = 1.0f;
 }
