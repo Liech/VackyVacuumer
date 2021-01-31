@@ -53,7 +53,6 @@ public class Dreck : MonoBehaviour
           dirt_count += 1;
           GetComponent<Ammo>().incAmmo();
         }
-        break;
       }
 
     }
