@@ -131,6 +131,7 @@ MonoBehaviour:
   On: 1
   feuchteReinigung: 0
   damageType: 2
+  specialSound: {fileID: 0}
 --- !u!61 &3442341807841374355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,7 +145,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0140284, y: -0.11157346}
+  m_Offset: {x: 0.0048470497, y: -0.14932439}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -155,7 +156,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.90432864, y: 0.22993624}
+  m_Size: {x: 0.94207954, y: 0.3054381}
   m_EdgeRadius: 0
 --- !u!1 &8691580229742346704
 GameObject:
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammoNeeded: 20
+  coolDownTime: 0.5
   rotateSpeed: 700
   stunDuration: 0.5
   FireSound: {fileID: 6461853921599703517, guid: 9dc536e53a362984c8c4924d97671ef6, type: 3}
