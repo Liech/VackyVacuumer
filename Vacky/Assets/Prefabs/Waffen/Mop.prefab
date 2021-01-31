@@ -205,3 +205,4 @@ MonoBehaviour:
   ammoNeeded: 20
   rotateSpeed: 700
   stunDuration: 0.5
+  FireSound: {fileID: 6461853921599703517, guid: 9dc536e53a362984c8c4924d97671ef6, type: 3}
