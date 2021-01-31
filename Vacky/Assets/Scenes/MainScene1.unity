@@ -15245,6 +15245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Master
       objectReference: {fileID: 0}
+    - target: {fileID: 5635561168548776296, guid: 03ba6a974135f99408d35e3a69b868f0, type: 3}
+      propertyPath: Aufsaugesound
+      value: 
+      objectReference: {fileID: 6461853921599703517, guid: 0c76d75601b6b1842b310a8914f77c4b, type: 3}
     - target: {fileID: 5827935547853887044, guid: 03ba6a974135f99408d35e3a69b868f0, type: 3}
       propertyPath: m_RootOrder
       value: 8
