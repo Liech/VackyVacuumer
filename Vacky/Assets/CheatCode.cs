@@ -36,7 +36,7 @@ public class CheatCode : MonoBehaviour
         foreach (var comp in cheat.GetComponents<Upgrade>())
           comp.doUpgrade(Singleton.instance.protagonist);
       }
-      if (Input.GetKey(KeyCode.K)&&!pressed)
+      else if (Input.GetKey(KeyCode.K)&&!pressed)
       {
         pressed = true;
         current--;
@@ -51,7 +51,7 @@ public class CheatCode : MonoBehaviour
         foreach (var comp in cheat.GetComponents<Upgrade>())
           comp.doUpgrade(Singleton.instance.protagonist);
       }
-      if (!Input.GetKey(KeyCode.K) && pressed)
+      if (!Input.GetKey(KeyCode.K) && !Input.GetKey(KeyCode.L) && pressed)
         pressed = false;
     }
 
