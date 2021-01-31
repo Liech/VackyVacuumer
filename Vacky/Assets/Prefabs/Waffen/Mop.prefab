@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 6889476948319741120}
   - component: {fileID: 3086364933737464920}
   - component: {fileID: 3442341807841374355}
+  - component: {fileID: 3210381190293713372}
   m_Layer: 2
   m_Name: SharpSide
   m_TagString: Untagged
@@ -126,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77a2c4dbf073f0e4eb4438c80a07023a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 15
-  Stun: 4
+  Damage: 20
+  Stun: 2
   On: 1
   feuchteReinigung: 0
   damageType: 2
@@ -139,13 +140,13 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6940751881809112103}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0048470497, y: -0.14932439}
+  m_Offset: {x: -0.024472162, y: -0.121959776}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -156,8 +157,39 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.94207954, y: 0.3054381}
+  m_Size: {x: 0.69579804, y: 0.23507196}
   m_EdgeRadius: 0
+--- !u!60 &3210381190293713372
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6940751881809112103}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.008880638, y: -0.023643017}
+      - {x: -0.327036, y: 0.117039144}
+      - {x: -0.30713427, y: -0.0766837}
+      - {x: 0.00823129, y: -0.15733361}
+      - {x: 0.31386918, y: -0.069521695}
+      - {x: 0.333959, y: 0.10968581}
 --- !u!1 &8691580229742346704
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,8 +235,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f272d2ed6b1b347830a0a5b5ab1fa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoNeeded: 20
-  coolDownTime: 0.5
+  ammoNeeded: 5
+  coolDownTime: 2
   rotateSpeed: 700
   stunDuration: 0.5
   FireSound: {fileID: 6461853921599703517, guid: 9dc536e53a362984c8c4924d97671ef6, type: 3}
