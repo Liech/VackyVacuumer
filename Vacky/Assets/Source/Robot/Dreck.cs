@@ -9,6 +9,7 @@ public class Dreck : MonoBehaviour
 {
     private int dirt_count = 0;
     private int num_points = 180;
+    public GameObject Aufsaugesound;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class Dreck : MonoBehaviour
   {
     if (collision.tag == "Dreck")
     {
+            if (Aufsaugesound) Instantiate(Aufsaugesound);
       dirt_count += 1;
       //Debug.Log("Dreck Count: " + dirt_count);
       GetComponent<Ammo>().incAmmo();
