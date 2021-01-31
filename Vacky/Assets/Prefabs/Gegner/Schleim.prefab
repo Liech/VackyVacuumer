@@ -56,7 +56,7 @@ MonoBehaviour:
   team: 1
   vulnerability: 2
   doesExplode: 1
-  explosionRadius: 4
+  explosionRadius: 2
   gotDamageSound: {fileID: 6461853921599703517, guid: 02f1f838d93327243bb35ff03b29a8de, type: 3}
 --- !u!58 &7319413857182008364
 CircleCollider2D:
