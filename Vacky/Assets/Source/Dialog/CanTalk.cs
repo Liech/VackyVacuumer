@@ -36,6 +36,8 @@ public class CanTalk : MonoBehaviour
       currentPosition = -1;
       foreach (var quest in QuestsOnDialogEnd)
         if(quest.GetComponent<Quest>()) quest.GetComponent<Quest>().questDone(QuestID);
+      SoundSingleton.instance.playCollect();
+
     }
     else
     {
