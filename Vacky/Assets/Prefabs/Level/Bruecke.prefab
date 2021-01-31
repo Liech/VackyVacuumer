@@ -3955,6 +3955,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: textes.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: titles.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: sprites.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: textes.Array.data[0]
+      value: '*snoozing noises*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: textes.Array.data[1]
+      value: Wh- what?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: textes.Array.data[2]
+      value: What are you all doing in here?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: textes.Array.data[3]
+      value: There was an emergency you say?!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: textes.Array.data[4]
+      value: And it is all over now? Good job!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: titles.Array.data[0]
+      value: Erbooooster Captain Faultier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: titles.Array.data[2]
+      value: Erbooooster Captain Faultier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: titles.Array.data[3]
+      value: Erbooooster Captain Faultier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: titles.Array.data[4]
+      value: Erbooooster Captain Faultier
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: f0abd3df50ada764089ba4513a986550, type: 3}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: f0abd3df50ada764089ba4513a986550, type: 3}
+    - target: {fileID: 7034721720649056002, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
+      propertyPath: sprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: f0abd3df50ada764089ba4513a986550, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392fbc1669fe42e47ae9a83d07ef4ea4, type: 3}
 --- !u!4 &42853636068028717 stripped

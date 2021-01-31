@@ -12,11 +12,9 @@ GameObject:
   - component: {fileID: 7034721720649056002}
   - component: {fileID: 3754926488310969269}
   - component: {fileID: 126044644391922322}
-  - component: {fileID: 6862176655373809535}
   - component: {fileID: 8826390672163901880}
-  - component: {fileID: 1544919592}
-  m_Layer: 2
-  m_Name: Wooki
+  m_Layer: 0
+  m_Name: Pinku
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7850129090882958910}
-  - {fileID: 3523310867179553201}
+  - {fileID: 4003041078712606633}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -52,14 +50,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundOnClick: {fileID: 0}
   titles:
-  - Irritated Wookie
-  - Irritated Wookie
+  - Pinku
+  - Pinku
   textes:
-  - GGrWWRGHH!!! Vacky! Go clean up!
-  - I can't work like this! GGrWWRGHH!!
+  - Thanks for helping me!
+  - Let's go to the bridge and help Cpt. Faultier
   sprites:
-  - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
-  - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
+  - {fileID: 21300000, guid: c641d3dd5f5ecd248b0caed5ad2f485b, type: 3}
+  - {fileID: 21300000, guid: c641d3dd5f5ecd248b0caed5ad2f485b, type: 3}
   QuestID: TALK
   QuestsOnDialogEnd: []
 --- !u!58 &3754926488310969269
@@ -94,30 +92,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.9
---- !u!114 &6862176655373809535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81427179281501930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundOnClick: {fileID: 0}
-  titles:
-  - Ill Wookie
-  - Ill Wookie
-  textes:
-  - GGrWWRGHH! My stomach hurts, go get my medicine from the storage.
-  - "Be carefull there are agressive Wollm\xE4use in there."
-  sprites:
-  - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
-  - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
-  QuestID: TALK
-  QuestsOnDialogEnd: []
 --- !u!114 &8826390672163901880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,31 +104,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432e477c5e5bb2a4f9f597b79e1ceb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1544919592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81427179281501930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundOnClick: {fileID: 0}
-  titles:
-  - Helpfull Wookie
-  - Helpfull Wookie
-  textes:
-  - GGrWWRGHH! Thats better.
-  - Here take this sensor upgrade. Go and help the other crew member. I opend the
-    door for you.
-  sprites:
-  - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
-  - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
-  QuestID: TALK
-  QuestsOnDialogEnd: []
 --- !u!1 &5664506828160998485
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7850129090882958910}
   - component: {fileID: 6038848692081385467}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +175,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c641d3dd5f5ecd248b0caed5ad2f485b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -237,7 +186,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &8182648139083053007
+--- !u!1001 &8567644291931482583
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -294,8 +243,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b361a0035309fd4990e4f7f109a8583, type: 3}
---- !u!4 &3523310867179553201 stripped
+--- !u!4 &4003041078712606633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4714085400263308926, guid: 5b361a0035309fd4990e4f7f109a8583, type: 3}
-  m_PrefabInstance: {fileID: 8182648139083053007}
+  m_PrefabInstance: {fileID: 8567644291931482583}
   m_PrefabAsset: {fileID: 0}
