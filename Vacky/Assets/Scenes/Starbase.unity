@@ -628,6 +628,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
+      propertyPath: sprites.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
       propertyPath: textes.Array.data[2]
       value: The computer blocked of access to the front of the station.
       objectReference: {fileID: 0}
@@ -637,7 +641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
       propertyPath: textes.Array.data[4]
-      value: I am not ready fpr a fourth! Go inside, Vacky and clean the mess up!
+      value: I am not ready for a fourth! Go inside, Vacky and clean the mess up!
       objectReference: {fileID: 0}
     - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
       propertyPath: titles.Array.data[3]
@@ -646,6 +650,14 @@ PrefabInstance:
     - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
       propertyPath: titles.Array.data[4]
       value: Panicing Redshirt
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
+      propertyPath: sprites.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5216086500567063100, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
+      propertyPath: sprites.Array.data[6]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5307815081089642267, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
       propertyPath: m_RootOrder
