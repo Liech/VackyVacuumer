@@ -363,6 +363,8 @@ MonoBehaviour:
   lifebar: 1
   team: 0
   vulnerability: 1
+  doesExplode: 1
+  explosionRadius: 4
   gotDamageSound: {fileID: 6461853921599703517, guid: 6d8d5945f6d975145a27bca587b94d27, type: 3}
 --- !u!114 &2389498530253544740
 MonoBehaviour:
@@ -491,7 +493,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eba31558181bed14e9ce221a64f289e8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 08f8b9d1ee5132d488ce5aedfa2da119, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.115
   m_Pitch: 0.75
