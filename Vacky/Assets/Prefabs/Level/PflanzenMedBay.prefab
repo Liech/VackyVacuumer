@@ -5010,6 +5010,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zettel1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
 --- !u!4 &4137615207089454806 stripped
@@ -5071,6 +5079,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 28f2d383f46ffdb4e91085e23c0f1cda, type: 3}
       propertyPath: m_Name
       value: Buch2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 28f2d383f46ffdb4e91085e23c0f1cda, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 28f2d383f46ffdb4e91085e23c0f1cda, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f2d383f46ffdb4e91085e23c0f1cda, type: 3}
@@ -5505,6 +5521,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
       propertyPath: m_Name
       value: Zettel2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
@@ -6126,6 +6150,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zettel1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
 --- !u!4 &1979226699456354257 stripped
@@ -6505,6 +6537,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 77ec7c56eb2a65e419ca7b596a19c9c8, type: 3}
       propertyPath: m_Name
       value: Buch1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 77ec7c56eb2a65e419ca7b596a19c9c8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 77ec7c56eb2a65e419ca7b596a19c9c8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77ec7c56eb2a65e419ca7b596a19c9c8, type: 3}
@@ -7406,6 +7446,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buch4
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 9329d9d268a7fe14483eed75e45fff93, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 9329d9d268a7fe14483eed75e45fff93, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9329d9d268a7fe14483eed75e45fff93, type: 3}
 --- !u!4 &8309119358368291534 stripped
@@ -7467,6 +7515,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
       propertyPath: m_Name
       value: Zettel4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
@@ -8460,6 +8516,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zettel3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 0cae74e566bc5914cb4bcaa1aa4923b5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 0cae74e566bc5914cb4bcaa1aa4923b5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cae74e566bc5914cb4bcaa1aa4923b5, type: 3}
 --- !u!4 &6439987764633496808 stripped
@@ -8522,6 +8586,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buch5
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e79ab04c612fa3a4382d417d7ab12f9b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e79ab04c612fa3a4382d417d7ab12f9b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e79ab04c612fa3a4382d417d7ab12f9b, type: 3}
 --- !u!4 &6429845230222151480 stripped
@@ -8583,6 +8655,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 1ece357dc07a87548ade23d64f04d38f, type: 3}
       propertyPath: m_Name
       value: Buch6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 1ece357dc07a87548ade23d64f04d38f, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 1ece357dc07a87548ade23d64f04d38f, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ece357dc07a87548ade23d64f04d38f, type: 3}
@@ -9095,6 +9175,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
       propertyPath: m_Name
       value: Zettel2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
