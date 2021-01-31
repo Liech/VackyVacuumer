@@ -36,6 +36,11 @@ public class Life : MonoBehaviour
     }
     transform.GetChild(0).GetComponent<SpriteRenderer>().color = new Color(1.0f, 0.5f + perc/2, 0.5f + perc/2);
   }
+  private IEnumerator glitch(float seconds)
+  {
+    yield return new WaitForSeconds(seconds);
+    Singleton.instance.Glitch = false;
+  }
 
   public void addDamage(int dmg, DamageCategory category = DamageCategory.BonkDamage)
   {
@@ -43,6 +48,22 @@ public class Life : MonoBehaviour
       return;
     if (gotDamageSound) Instantiate(gotDamageSound);
     life -= dmg;
+
+
+    if (transform.childCount > 0)
+    {
+      if (transform.GetChild(0).GetComponent<ShakeTransform>())
+      {
+        transform.GetChild(0).GetComponent<ShakeTransform>().Begin();
+      }
+    }
+
+    if (alive && lifebar)
+    {
+      StopAllCoroutines();
+      Singleton.instance.Glitch = true;
+      StartCoroutine("glitch", 0.4f);
+    }
     if (life < 0)
     {
       life = 0;

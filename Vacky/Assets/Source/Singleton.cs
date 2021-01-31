@@ -15,6 +15,9 @@ public class Singleton : MonoBehaviour
   public GameObject protagonist;
   public GameObject Dialog;
   public bool blockInput = false;
+  public bool Glitch = false;
+  public GameObject cam;
+  public float Screenshake = 0;
 
   // Start is called before the first frame update
   public Singleton() 
