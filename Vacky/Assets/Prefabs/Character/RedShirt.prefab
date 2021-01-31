@@ -48,9 +48,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titles: []
-  textes: []
-  sprites: []
+  titles:
+  - Panicing Redshirt
+  - Panicing Redshirt
+  - Panicing Redshirt
+  textes:
+  - OH NO, the excplosion of the recycler engine 3000 radiated all the trash and
+    mutated it.
+  - The recycling center is completly infested with aggresive trash entities.
+  - The computer blocked of access to the fron of the station.
+  sprites:
+  - {fileID: 21300000, guid: 3f44a9388d2baf3458362b6886078102, type: 3}
+  - {fileID: 21300000, guid: 3f44a9388d2baf3458362b6886078102, type: 3}
+  - {fileID: 21300000, guid: 3f44a9388d2baf3458362b6886078102, type: 3}
   QuestID: TALK
   QuestsOnDialogEnd: []
 --- !u!58 &3754926488310969269
