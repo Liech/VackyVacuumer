@@ -59,6 +59,7 @@ MonoBehaviour:
   - I can't work like this! GGrWWRGHH!!
   sprites:
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
+  - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
   QuestID: TALK
   QuestsOnDialogEnd: []
 --- !u!58 &3754926488310969269
