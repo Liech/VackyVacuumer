@@ -35,7 +35,7 @@ public class CanTalk : MonoBehaviour
       dialogActive = false;
       currentPosition = -1;
       foreach (var quest in QuestsOnDialogEnd)
-        quest.GetComponent<Quest>().questDone(QuestID);
+        if(quest.GetComponent<Quest>()) quest.GetComponent<Quest>().questDone(QuestID);
     }
     else
     {
