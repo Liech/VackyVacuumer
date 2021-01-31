@@ -48,17 +48,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundOnClick: {fileID: 0}
   titles:
-  - Spionage Katze
-  - Verschmuste Kadse
+  - Inkitty
+  - Inkitty
+  - Inkitty
+  - Inkitty
+  - Inkitty
+  - Inkitty
   textes:
-  - ICH WILL KUSCHELN
-  - kuscheln :3
+  - Vacky! Over here...
+  - The slime monsters have taken over the kitchen!
+  - They even cornered Bobby the meatball...
+  - I would beat them myself, but I could get wet and slimy myself then...
+  - Here is a mop to mop up the slime.
+  - And ask Bobby if they've seen Bunny somewhere!
   sprites:
   - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
   - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
-  QuestID: TALK
-  QuestsOnDialogEnd: []
+  - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
+  - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
+  - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
+  - {fileID: 21300000, guid: 22f92b686eb182246a45e172146051dd, type: 3}
+  QuestID: MOP
+  QuestsOnDialogEnd:
+  - {fileID: 0}
 --- !u!58 &3754926488310969269
 CircleCollider2D:
   m_ObjectHideFlags: 0

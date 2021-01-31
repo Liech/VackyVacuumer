@@ -20,20 +20,12 @@ public class FireWeapon : IController
 
     bool pressed = Input.GetKey(KeyCode.Space);
 
-    int ammoNeeded = 0;
-    if (GetComponentInChildren<IFireable>())
-      ammoNeeded = GetComponentInChildren<IFireable>().ammoNeeded;
+    int ammoNeeded = GetComponentInChildren<IFireable>().ammoNeeded;
     if (pressed && !fired &&  GetComponent<Ammo>().getAmmo() >= ammoNeeded && GetComponentInChildren<IFireable>())
     {
-      if (GetComponent<Ammo>().getAmmo() >= ammoNeeded)
-      {
-        GetComponentInChildren<IFireable>().fire();
-        fired = true;
-        GetComponent<Ammo>().decAmmo(ammoNeeded);
-      } else
-      {
-        SoundSingleton.instance.playClick();
-      }
+      GetComponentInChildren<IFireable>().fire();
+      fired = true;
+      GetComponent<Ammo>().decAmmo(ammoNeeded);
     }
     else if (!pressed)
       fired = false;

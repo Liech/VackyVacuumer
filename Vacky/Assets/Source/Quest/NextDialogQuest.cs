@@ -7,5 +7,6 @@ public class NextDialogQuest : Quest
   public override void questDone(string ID)
   {
     Destroy(gameObject.GetComponent<CanTalk>());
+
   }
 }
