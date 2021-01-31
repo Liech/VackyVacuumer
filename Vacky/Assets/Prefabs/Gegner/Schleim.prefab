@@ -126,11 +126,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 6402330969068998087, guid: 82842108becb4f94fbc17cd852256f54, type: 3}
-  reloadTime: 8
-  spawnDistance: 1.3
-  bulletSpeed: 4
-  reshotTime: 0.5
-  bulletsInMagazine: 8
+  reloadTime: 4
+  spawnDistance: 1.05
+  bulletSpeed: 2
+  reshotTime: 1
+  bulletsInMagazine: 3
 --- !u!58 &5691845435112792920
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -146,7 +146,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 4.03
+  m_Radius: 4
 --- !u!114 &9198919369158964500
 MonoBehaviour:
   m_ObjectHideFlags: 0
