@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac7bf6b1f808f34882d078d223df3ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  max_ammo: 100
+  max_ammo: 500
   ammo: 0
 --- !u!114 &1280174244273117731
 MonoBehaviour:
