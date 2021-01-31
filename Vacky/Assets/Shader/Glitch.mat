@@ -5,7 +5,8 @@ Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Glitch
   m_Shader: {fileID: 4800000, guid: e5ea4a9fa05ac2646a298dd84ae5002d, type: 3}
   m_ShaderKeywords: _ALPHAPREMULTIPLY_ON
@@ -72,7 +73,7 @@ Material:
     - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Random: 0.7551582
+    - _Random: 0.57315594
     - _Range: 0
     - _Red: 1
     - _SmoothnessTextureChannel: 0
@@ -84,3 +85,4 @@ Material:
     - _Color: {r: 0.48235294, g: 0.4392157, b: 0.28627452, a: 0.1764706}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_BuildTextureStacks: []
