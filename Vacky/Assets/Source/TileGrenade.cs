@@ -45,7 +45,7 @@ public class TileGrenade : MonoBehaviour
           if (Physics2D.OverlapPoint(pos))
             continue;
           if ((new Vector2(x + 0.5f, y + 0.5f) - new Vector2(center.x, center.y)).magnitude < r / map.transform.localScale[0])
-            map.SetTile(new Vector3Int(x, y, 0), newTile);
+            if (map.GetTile(new Vector3Int(x, y, 0)) == null) map.SetTile(new Vector3Int(x, y, 0), newTile);
         }
     }
   }
