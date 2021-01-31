@@ -1568,6 +1568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RadiatorReaktor
       objectReference: {fileID: 0}
+    - target: {fileID: 5327252320690802323, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.data[0]
+      value: 
+      objectReference: {fileID: 618478186}
     - target: {fileID: 7969452263558184610, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
       propertyPath: m_Tiles.Array.data[2].second.m_AllTileFlags
       value: 2147483649
