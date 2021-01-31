@@ -6263,7 +6263,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1511458617113197692, guid: d2a756b1d32cec044add016a7f1738f1, type: 3}
       propertyPath: m_Name
-      value: Door
+      value: KerbDoor
       objectReference: {fileID: 0}
     - target: {fileID: 1511458617113197693, guid: d2a756b1d32cec044add016a7f1738f1, type: 3}
       propertyPath: m_RootOrder
@@ -10067,9 +10067,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4006064017904366313, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006064017904366313, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
       propertyPath: QuestsOnDialogEnd.Array.data[0]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4006064017904366313, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.data[1]
+      value: 
       objectReference: {fileID: 909783146288747172}
+    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
 --- !u!4 &8953864061761990216 stripped
