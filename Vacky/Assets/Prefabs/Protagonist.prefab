@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb36e2081284cc44988aaa7b1d15a049, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Aufsaugesound: {fileID: 0}
+  Aufsaugesound: {fileID: 6461853921599703517, guid: 0c76d75601b6b1842b310a8914f77c4b, type: 3}
 --- !u!114 &5622031123256002915
 MonoBehaviour:
   m_ObjectHideFlags: 0
