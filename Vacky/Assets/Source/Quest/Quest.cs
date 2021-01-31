@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class Quest : MonoBehaviour
 {
-  public virtual void questDone(string ID) { }
+  public virtual void questDone(string ID) { 
+    SoundSingleton.instance.playQuestComplete();
+  }
 }

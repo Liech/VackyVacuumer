@@ -9,6 +9,7 @@ public class SpawnQuest : Quest
   {
     Debug.Log("Danke. Hier die Belohnung: " + toSpawn.name);
     Instantiate(toSpawn,transform.position,Quaternion.identity);
-    Destroy(gameObject);    
+    Destroy(gameObject);
+    SoundSingleton.instance.playQuestComplete();
   }
 }

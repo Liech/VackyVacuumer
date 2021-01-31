@@ -10,6 +10,8 @@ public class SoundSingleton : MonoBehaviour
   public GameObject Bonk;
   public GameObject Collect;
   public GameObject EnemyDeath;
+  public GameObject QuestComplete;
+  public GameObject Heal;
 
   public void playEnemyDeath()
   {
@@ -26,6 +28,16 @@ public class SoundSingleton : MonoBehaviour
   public void playBonk(Transform t)
   {
     if (Bonk) Instantiate(Bonk,t);
+  }
+
+  public void playQuestComplete()
+  {
+    if (QuestComplete) Instantiate(QuestComplete);
+  }
+  
+  public void playHeal()
+  {
+    if (Heal) Instantiate(Heal);
   }
 
   public SoundSingleton()

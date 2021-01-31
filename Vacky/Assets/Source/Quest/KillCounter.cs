@@ -30,7 +30,6 @@ public class KillCounter : MonoBehaviour
       foreach (var quest in quests)
         quest.GetComponent<Quest>().questDone(ID);
       Destroy(gameObject);
-      SoundSingleton.instance.playCollect();
 
     }
     else
