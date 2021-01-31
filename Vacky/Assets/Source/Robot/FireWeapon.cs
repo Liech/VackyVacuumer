@@ -23,9 +23,15 @@ public class FireWeapon : IController
     int ammoNeeded = GetComponentInChildren<IFireable>().ammoNeeded;
     if (pressed && !fired &&  GetComponent<Ammo>().getAmmo() >= ammoNeeded && GetComponentInChildren<IFireable>())
     {
-      GetComponentInChildren<IFireable>().fire();
-      fired = true;
-      GetComponent<Ammo>().decAmmo(ammoNeeded);
+      if (GetComponent<Ammo>().getAmmo() >= ammoNeeded)
+      {
+        GetComponentInChildren<IFireable>().fire();
+        fired = true;
+        GetComponent<Ammo>().decAmmo(ammoNeeded);
+      } else
+      {
+        SoundSingleton.instance.playClick();
+      }
     }
     else if (!pressed)
       fired = false;
