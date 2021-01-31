@@ -180,6 +180,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d685530c9bccc24ea51196b8ec76f88, type: 3}
+--- !u!1001 &1864356124
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642267, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5307815081089642277, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
+      propertyPath: m_Name
+      value: RadiatorReaktor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9da62e1927e76f945b7f9e9a0d27478a, type: 3}
 --- !u!1001 &1957876047
 PrefabInstance:
   m_ObjectHideFlags: 0
