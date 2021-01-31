@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3754926488310969269}
   - component: {fileID: 126044644391922322}
   - component: {fileID: 8826390672163901880}
-  - component: {fileID: 8455451548874169883}
+  - component: {fileID: 4055725349436621634}
   m_Layer: 0
-  m_Name: Bengi
+  m_Name: Cthyla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,18 +51,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundOnClick: {fileID: 0}
   titles:
-  - Bengi
-  - Bengi
-  - Bengi
+  - Cthyla
+  - Cthyla
   textes:
-  - Hey vacy, good job cleaning up these slimes.
-  - With this access card you can get into the reactor core to help out there.
-  - Drive back to the engineering department, the reactor core is through the door
-    to the right.
+  - Oh hi! I need my key from the lab down the corridor can you help me out?
+  - I gave you access to the room. If you find the key we can help my friend in the
+    medic department right here.
   sprites:
-  - {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
-  - {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
-  - {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
+  - {fileID: 21300000, guid: fa134eaa52f69554a94482ca96bf25b5, type: 3}
+  - {fileID: 21300000, guid: fa134eaa52f69554a94482ca96bf25b5, type: 3}
   QuestID: TALK
   QuestsOnDialogEnd: []
 --- !u!58 &3754926488310969269
@@ -109,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432e477c5e5bb2a4f9f597b79e1ceb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8455451548874169883
+--- !u!114 &4055725349436621634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,14 +120,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundOnClick: {fileID: 0}
   titles:
-  - Bengi
-  - Bengi
+  - Cthyla
+  - Cthyla
   textes:
-  - I knew they could use some help back there. Greate job!
-  - Now go on and help the rest of the crew.
+  - Hey greate you got it!
+  - Lets get in here,
   sprites:
-  - {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
-  - {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
+  - {fileID: 21300000, guid: fa134eaa52f69554a94482ca96bf25b5, type: 3}
+  - {fileID: 21300000, guid: fa134eaa52f69554a94482ca96bf25b5, type: 3}
   QuestID: TALK
   QuestsOnDialogEnd: []
 --- !u!1 &5664506828160998485
@@ -204,7 +201,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 47a4323403053ca428aa741f63356090, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fa134eaa52f69554a94482ca96bf25b5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

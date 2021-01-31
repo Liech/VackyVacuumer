@@ -50,10 +50,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundOnClick: {fileID: 0}
   titles:
   - Irritated Wookie
+  - Irritated Wookie
   textes:
-  - GGrWWRGHH!!! Go clean up!
+  - GGrWWRGHH!!! Vacky! Go clean up!
+  - I can't work like this! GGrWWRGHH!!
   sprites:
   - {fileID: 21300000, guid: 89fc045d031e119429390f9b7b210913, type: 3}
   QuestID: TALK
@@ -102,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundOnClick: {fileID: 0}
   titles:
   - Ill Wookie
   - Ill Wookie
@@ -137,6 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundOnClick: {fileID: 0}
   titles:
   - Helpfull Wookie
   - Helpfull Wookie
