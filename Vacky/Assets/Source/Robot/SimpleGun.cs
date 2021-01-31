@@ -29,6 +29,6 @@ public class SimpleGun : IFireable
 
     GameObject g = Instantiate(Bullet,transform.parent.position + new Vector3(dir.x,dir.y,0),transform.parent.rotation);
     g.GetComponent<Rigidbody2D>().velocity = dir * StartVelocity;
-    Instantiate(fireSound);
+    if (fireSound) Instantiate(fireSound);
   }
 }
