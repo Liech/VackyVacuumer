@@ -141,7 +141,7 @@ public class VisRenderer : MonoBehaviour
         if (colide)
         {
             RaycastHit2D hit = Physics2D.Raycast(new Vector2(transform.position[0], transform.position[1]) + new Vector2(dir[0], dir[1]) * GetComponent<CircleCollider2D>().radius * 1.01f, dir, _viewRadius);
-            if (hit.collider != null)
+            if (hit.collider != null && !hit.collider.isTrigger)
                 return new ViewCastData(true, hit.point, hit.distance, globAng, hit.normal);
         }
         
