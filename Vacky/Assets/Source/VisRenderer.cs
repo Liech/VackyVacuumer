@@ -85,19 +85,20 @@ public class VisRenderer : MonoBehaviour
       }
     }
 
-    int offset = vertCount;
-    for(int i = 0; i<basicView.Count; i++)
+    int offset =  _visMode == VisMode.Lida ? vertCount*3: vertCount;
+    int triOffset = _visMode == VisMode.Lida ? vertCount * 3 : (vertCount - 2) * 3;
+    for (int i = 0; i<basicView.Count; i++)
     {
       if(i==0)
-        verts[i + vertCount] = basicView[i];
+        verts[i + offset] = basicView[i];
       else
-        verts[i + vertCount] = transform.InverseTransformPoint(basicView[i]);
+        verts[i + offset] = transform.InverseTransformPoint(basicView[i]);
 
       if (i < basicView.Count - 2)
       {
-        tris[i * 3 + (offset-2)*3] = offset;
-        tris[i * 3 + 1 + (offset-2) * 3] = i + 2 + offset;
-        tris[i * 3 + 2 + (offset-2) * 3] = i + 1 + offset;
+        tris[i * 3 + triOffset] = offset;
+        tris[i * 3 + 1 + triOffset] = i + 2 + offset;
+        tris[i * 3 + 2 + triOffset] = i + 1 + offset;
       }
     }
 
