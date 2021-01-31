@@ -249,8 +249,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f38214c9e06bc04ea3fdb8e893c7b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 25
-  maxlife: 25
+  life: 100
+  maxlife: 100
   lifebar: 0
   team: 0
   vulnerability: 1
