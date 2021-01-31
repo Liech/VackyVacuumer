@@ -10,6 +10,7 @@ public class Turret : IController
   public float bulletSpeed = 2;
   public float reshotTime = 3;
   public int bulletsInMagazine = 3;
+  public GameObject FireSound;
 
   bool canFire = true;
   int bullets = 0;
@@ -21,6 +22,7 @@ public class Turret : IController
   {
     if (!canFire)
       return;
+    if (FireSound) Instantiate(FireSound);
     bullets--;
     Vector2 dir = target.transform.position - transform.position;
     dir.Normalize();

@@ -184,6 +184,7 @@ MonoBehaviour:
   speed: 15
   rotationSpeed: 90
   angleTolerance: 5
+  SoundOnCharge: {fileID: 6461853921599703517, guid: 0bf80a9bb18592046997dcedeb3aecee, type: 3}
 --- !u!114 &8213849775301484309
 MonoBehaviour:
   m_ObjectHideFlags: 0

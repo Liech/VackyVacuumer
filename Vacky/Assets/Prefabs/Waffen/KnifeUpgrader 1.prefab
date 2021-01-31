@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5964523901671156699}
   - component: {fileID: 3922496243686563040}
   m_Layer: 0
-  m_Name: KnifeUpgrade
+  m_Name: KnifeUpgrader 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,4 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a1cb582ee9e7974daaf524ec4a2b7be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttachOnUpgrade: {fileID: 8691580229742346704, guid: 0195819a621104c4ba41a9c713935bb4, type: 3}
+  AttachOnUpgrade: {fileID: 8691580229742346704, guid: 2c83286b62458004c9c663d90d07c7ba, type: 3}
