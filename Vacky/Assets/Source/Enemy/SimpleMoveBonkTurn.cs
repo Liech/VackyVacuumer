@@ -27,10 +27,10 @@ public class SimpleMoveBonkTurn : IController, IStunnable
   void OnCollisionEnter2D(Collision2D collision)
   {
     currentDirection *= -1;
-    Vector3 s = transform.localScale;
-    s.x *= -1;
-    transform.localScale = s;
-
+    //Vector3 s = transform.localScale;
+    //s.x *= -1;
+    //transform.localScale = s;
+    //GetComponentInChildren<SpriteRenderer>().flipX = !GetComponentInChildren<SpriteRenderer>().flipX;
   }
 
   public void stun(float seconds)
