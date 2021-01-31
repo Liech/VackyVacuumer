@@ -8,7 +8,7 @@ This is a temporary script file.
 from PIL import Image
 import os
 
-infile = 'Dreck5.png'
+infile = 'continousDRECK.png'
 basename = infile[:-4]
 if not os.path.isdir(basename):
     os.mkdir(basename)
