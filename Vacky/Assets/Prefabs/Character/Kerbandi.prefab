@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3754926488310969269}
   - component: {fileID: 126044644391922322}
   - component: {fileID: 8826390672163901880}
+  - component: {fileID: 4006064017904366313}
   m_Layer: 0
   m_Name: Kerbandi
   m_TagString: Untagged
@@ -51,9 +52,12 @@ MonoBehaviour:
   soundOnClick: {fileID: 0}
   titles:
   - Kerbandi
+  - Kerbandi
   textes:
-  - Huh who are you? Can you get rid of all the readioactive trhash?
+  - Huh who are you? Can you get rid of all the readioactive thrash?
+  - We can't have the dirt mutate into even more monsters now!
   sprites:
+  - {fileID: 21300000, guid: 9bdcf832c8122f843923d0dd82ee7725, type: 3}
   - {fileID: 21300000, guid: 9bdcf832c8122f843923d0dd82ee7725, type: 3}
   QuestID: TALK
   QuestsOnDialogEnd: []
@@ -101,6 +105,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432e477c5e5bb2a4f9f597b79e1ceb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4006064017904366313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81427179281501930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundOnClick: {fileID: 0}
+  titles:
+  - Kerbandi
+  - Kerbandi
+  - Kerbandi
+  textes:
+  - Thanks little friend.
+  - With all the power you just collected you can probablly use that cool new sensor
+    I worked on.
+  - Go to my room up there to collect it.
+  sprites:
+  - {fileID: 21300000, guid: 9bdcf832c8122f843923d0dd82ee7725, type: 3}
+  - {fileID: 21300000, guid: 9bdcf832c8122f843923d0dd82ee7725, type: 3}
+  - {fileID: 21300000, guid: 9bdcf832c8122f843923d0dd82ee7725, type: 3}
+  QuestID: TALK
+  QuestsOnDialogEnd:
+  - {fileID: 0}
 --- !u!1 &5664506828160998485
 GameObject:
   m_ObjectHideFlags: 0

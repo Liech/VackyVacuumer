@@ -5500,35 +5500,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb19c74f8f020c24f9d8b3f632017a08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4006064017904366313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9175837588935520912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e9af5600c4902a4c95c1f854202877b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundOnClick: {fileID: 0}
-  titles:
-  - Kerbandi
-  - Kerbandi
-  - Kerbandi
-  textes:
-  - Thanks little friend.
-  - With all the power you just collected you can probablly use that cool new sensor
-    I worked on.
-  - Go to my room up there to collect it.
-  sprites:
-  - {fileID: 21300000, guid: 9bdcf832c8122f843923d0dd82ee7725, type: 3}
-  - {fileID: 21300000, guid: 9bdcf832c8122f843923d0dd82ee7725, type: 3}
-  - {fileID: 21300000, guid: 9bdcf832c8122f843923d0dd82ee7725, type: 3}
-  QuestID: TALK
-  QuestsOnDialogEnd:
-  - {fileID: 909783146288747172}
 --- !u!1001 &139980287237729619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10087,36 +10058,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
-      propertyPath: textes.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
-      propertyPath: titles.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
-      propertyPath: textes.Array.data[0]
-      value: Huh who are you? Can you get rid of all the readioactive thrash?
-      objectReference: {fileID: 0}
-    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
-      propertyPath: textes.Array.data[1]
-      value: We can't have the dirt mutate into even more monsters now!
-      objectReference: {fileID: 0}
-    - target: {fileID: 7034721720649056002, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
-      propertyPath: titles.Array.data[1]
-      value: Kerbandi
-      objectReference: {fileID: 0}
+    - target: {fileID: 4006064017904366313, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.data[0]
+      value: 
+      objectReference: {fileID: 909783146288747172}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
 --- !u!4 &8953864061761990216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 158986983802851890, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
-  m_PrefabInstance: {fileID: 9112565717987720314}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &9175837588935520912 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 81427179281501930, guid: 79117c9bc1d2be1409bd1cd1078c8f82, type: 3}
   m_PrefabInstance: {fileID: 9112565717987720314}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9165601447233978383
