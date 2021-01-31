@@ -5289,6 +5289,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zettel1
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 302a43107e61ca14d9c1820ea8569f04, type: 3}
 --- !u!4 &4283819490651663049 stripped
@@ -5599,6 +5607,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zettel2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb32cbf4035e59942b0f5b9963d194e8, type: 3}
 --- !u!4 &3340579123100755068 stripped
@@ -5733,6 +5749,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 0cae74e566bc5914cb4bcaa1aa4923b5, type: 3}
       propertyPath: m_Name
       value: Zettel3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 0cae74e566bc5914cb4bcaa1aa4923b5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 0cae74e566bc5914cb4bcaa1aa4923b5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0cae74e566bc5914cb4bcaa1aa4923b5, type: 3}
@@ -6051,6 +6075,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5caabb8ac8184f74ebc46ed39ed3fe27, type: 3}
@@ -6560,6 +6592,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
       propertyPath: m_Name
       value: Kaffeetasse2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6e325fecdddc04eba1ff8055149d31, type: 3}
@@ -7366,6 +7406,14 @@ PrefabInstance:
     - target: {fileID: 5096324668461245668, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
       propertyPath: m_Name
       value: Zettel4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145799170147257281, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -996774181
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e07ab3efb9fe4b34c9834c587c0cb62b, type: 3}

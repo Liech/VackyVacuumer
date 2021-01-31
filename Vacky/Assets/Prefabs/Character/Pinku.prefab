@@ -52,14 +52,18 @@ MonoBehaviour:
   titles:
   - Pinku
   - Pinku
+  - Pinku
   textes:
   - Thanks for helping me!
   - Let's go to the bridge and help Cpt. Faultier
+  - The least we must do is wake him up!
   sprites:
   - {fileID: 21300000, guid: c641d3dd5f5ecd248b0caed5ad2f485b, type: 3}
   - {fileID: 21300000, guid: c641d3dd5f5ecd248b0caed5ad2f485b, type: 3}
+  - {fileID: 21300000, guid: c641d3dd5f5ecd248b0caed5ad2f485b, type: 3}
   QuestID: TALK
-  QuestsOnDialogEnd: []
+  QuestsOnDialogEnd:
+  - {fileID: 0}
 --- !u!58 &3754926488310969269
 CircleCollider2D:
   m_ObjectHideFlags: 0
