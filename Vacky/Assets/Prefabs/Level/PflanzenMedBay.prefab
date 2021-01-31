@@ -6754,6 +6754,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 132fde70cd72cfe40abcf0ffd6cf1bff, type: 3}
+      propertyPath: textes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 132fde70cd72cfe40abcf0ffd6cf1bff, type: 3}
+      propertyPath: titles.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 132fde70cd72cfe40abcf0ffd6cf1bff, type: 3}
+      propertyPath: sprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 132fde70cd72cfe40abcf0ffd6cf1bff, type: 3}
+      propertyPath: textes.Array.data[2]
+      value: The least we must do is wake him up!
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 132fde70cd72cfe40abcf0ffd6cf1bff, type: 3}
+      propertyPath: titles.Array.data[2]
+      value: Pinku
+      objectReference: {fileID: 0}
+    - target: {fileID: 7034721720649056002, guid: 132fde70cd72cfe40abcf0ffd6cf1bff, type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: c641d3dd5f5ecd248b0caed5ad2f485b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 132fde70cd72cfe40abcf0ffd6cf1bff, type: 3}
 --- !u!4 &3694875881521501209 stripped
