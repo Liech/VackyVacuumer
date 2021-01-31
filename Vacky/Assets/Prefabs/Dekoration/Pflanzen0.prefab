@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5299650838493170310}
   - component: {fileID: 6498631534086231285}
   m_Layer: 0
-  m_Name: Tisch 2-Up
+  m_Name: Pflanzen1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 253602879
   m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2a45452b3c48e9c478d4efb98c7fbb55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6f12d351eda9ba945a22dd60e1ec02b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,18 +98,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0018176138, y: -0.47994637}
+  m_Offset: {x: -0.00010731071, y: -0.32279202}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8411674, y: 1.0415144}
+  m_Size: {x: 0.37447238, y: 0.3702863}
   m_EdgeRadius: 0
 --- !u!50 &6498631534086231285
 Rigidbody2D:
@@ -161,7 +161,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1984011180357247883, guid: f45f696d2a8569f45b27cc331525c656, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1984011180357247883, guid: f45f696d2a8569f45b27cc331525c656, type: 3}
       propertyPath: m_LocalRotation.w
