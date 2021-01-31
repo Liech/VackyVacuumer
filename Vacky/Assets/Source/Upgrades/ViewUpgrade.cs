@@ -8,5 +8,6 @@ public class ViewUpgrade : Upgrade
   {
     if (target.GetComponent<VisRenderer>())
       target.GetComponent<VisRenderer>().upgrade();
+      SoundSingleton.instance.playCollect();
   }
 }

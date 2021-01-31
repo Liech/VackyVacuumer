@@ -43,6 +43,7 @@ public class Dreck : MonoBehaviour
             tilemap.SetTile(tilemap.WorldToCell(contour_point), null);
             if (Aufsaugesound) Instantiate(Aufsaugesound);
             dirt_count += 1;
+            GetComponent<Ammo>().incAmmo();
           }
         }
         if (tilemap.GetTile(tilemap.WorldToCell(pos)))
@@ -56,14 +57,4 @@ public class Dreck : MonoBehaviour
 
     }
   }
-
-    public int GetDirtCount()
-    {
-        return dirt_count;
-    }
-
-    public void SetDirtCount(int new_count)
-    {
-        dirt_count = new_count;
-    }
 }
