@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Starbase.unity
     guid: d1b6329a7733e9e4fb0d6b51af40c35f
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 89be48d7710a0994f9aa49a7672b1055
   m_configObjects: {}

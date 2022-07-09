@@ -2249,6 +2249,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bruecke
       objectReference: {fileID: 0}
+    - target: {fileID: 6744056578050708576, guid: c0b705bc77c8e7848acff7f6d1580367, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6744056578050708576, guid: c0b705bc77c8e7848acff7f6d1580367, type: 3}
+      propertyPath: QuestsOnDialogEnd.Array.data[0]
+      value: 
+      objectReference: {fileID: 5941258523316211647, guid: 872eb71e8506ebf4a9e4de1e6fc9eb6a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0b705bc77c8e7848acff7f6d1580367, type: 3}
 --- !u!4 &2015664012 stripped
