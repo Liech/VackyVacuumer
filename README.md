@@ -6,6 +6,10 @@
 
 An cleanup Adventure game in Space.
 
+# Play it on Itch
+
+https://peinliech.itch.io/vackyvacuumer
+
 # History
 
 Entry of the Global Game Jam 2021 (Online) with the IFgameSH.
